@@ -1,0 +1,46 @@
+# main links
+main:
+  - title: "Bio"
+    url: /bio
+  - title: "Publication"
+    url: /publication
+  - title: "Research"
+    url: /research
+  - title: "Teaching"
+    url: /teaching
+  - title: "Service"
+    url: /service
+  - title: "Blog"
+    url: /blog
+
+ 
+  
+aml:
+  - title: Applied ML 
+    children:
+      - title: "Info"
+        url: /courses/aml/info/
+      - title: "Syllabus"
+        url: /courses/aml/syllabus/
+      - title: "Calendar"
+        url: /courses/aml/calendar/
+      - title: "Assignments"
+        url: /courses/aml/assignments/
+      - title: "Announcements"
+        url: /courses/aml/announcements/
+      
+        
+tml:
+  - title: Theoretical ML 
+    children:
+      - title: "Info"
+        url: /courses/tml/info/
+      - title: "Syllabus"
+        url: /courses/tml/syllabus/
+      - title: "Calendar"
+        url: /courses/tml/calendar/
+      - title: "Assignments"
+        url: /courses/tml/assignments/
+      - title: "Announcements"
+        url: /courses/tml/announcements/
+  

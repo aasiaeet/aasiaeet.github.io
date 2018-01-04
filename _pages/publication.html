@@ -1,0 +1,18 @@
+---
+layout: single 
+permalink: /publication/
+author_profile: true
+title: Publication
+years: [2016, 2015, 2013, 2012]
+toc: true 
+---
+
+<p> 
+You can also find my articles on my 
+<a href= "https://scholar.google.com/citations?hl=en&user=RrV5LtsAAAAJ&view_op=list_works&gmla=AJsN-F6BbctU_y2tmfyng0h6cWnHrLFzWiFSvoR02lweIIDZGFcuBB245xJ8JefosLrS96ffCDwCIkdPlZn-8eQDIvzxHhYrDN3EWPVNKpkCbMGRVUvtNtKR58b7tNfZwzIlzGLSrW9uXAB1jwgdzRRd28xH-OvIBptqCNyMWIEls2cxAXrElio&gmla=AJsN-F7ExyPlRXeGaL84c79D8ZhMEAsp07i-ltd5qTpqpi1tJkM76MaCG39GO8wwT0ZqYQH5DNoRDgHc800LcH3PHzyfDaeSJLKw89q2eEVie4MXx4EpKFY&sciund=1600418140394454477&gmla=AJsN-F5qzBXJC9vt5YlwCiefO0cO9I5luN-t5SmD6JapDVtq2sRzeaizO17S2hsWqtDtiBkX-4fNqzKxD36whzjqhqllQhmDqzX2t_rB8jMzft8S1TPgAKs&gmla=AJsN-F75HUAZE7OFVfC73zIqJ6r5XfBHkuhMS-Ha05DOLp__GaBrNe7KrF9XXS_0JXuR0dyH_aDMSaWsF4RM82MStQdjdQKFZ20KfQETpyIlV9Lk6Ye3cb8"> Google Scholar profile</a>.  
+</p> 
+
+{% for y in page.years %}
+  <h3  id="{{y}}" class="pubyear">{{y}}</h3>
+  {% bibliography -f papers -q @*[year={{y}}]* %}
+{% endfor %}
