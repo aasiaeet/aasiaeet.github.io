@@ -3,7 +3,7 @@ main:
   - title: "Bio"
     url: /bio
   - title: "Publication"
-    url: /publication
+    url: /publicationbyyear
   - title: "Research"
     url: /research
   - title: "Teaching"
