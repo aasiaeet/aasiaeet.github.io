@@ -38,7 +38,7 @@ var idx = lunr(function () {
     
       this.add({
           title: "Applied Machine Learning",
-          excerpt: "“Hello”\n",
+          excerpt: "\n",
           categories: [],
           tags: [],
           id: 3
@@ -83,7 +83,7 @@ var idx = lunr(function () {
     
       this.add({
           title: "Theoretical Machine Learning",
-          excerpt: "“Dear”\n",
+          excerpt: "\n",
           categories: [],
           tags: [],
           id: 8
@@ -680,7 +680,7 @@ var store = [
       {
         "title": "Applied Machine Learning",
         "url": "http://localhost:4000/courses/aml/info/",
-        "excerpt": "“Hello”\n",
+        "excerpt": "\n",
         "teaser":
           
             null
@@ -735,7 +735,7 @@ var store = [
       {
         "title": "Theoretical Machine Learning",
         "url": "http://localhost:4000/courses/tml/info",
-        "excerpt": "“Dear”\n",
+        "excerpt": "\n",
         "teaser":
           
             null
