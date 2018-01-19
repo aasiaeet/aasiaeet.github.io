@@ -4,6 +4,7 @@
   booktitle={16th SIAM International Conference on Data Mining (SDM)},
   pages={801--809},
   year={2016},
+  abstract={Structured estimation methods, such as LASSO, have received considerable attention in recent years and substantial progress has been made in extending such methods to general norms and non-Gaussian design matrices. In real world problems, however, covariates are usually corrupted with noise and there have been efforts to generalize structured estimation method for noisy covariate setting. In this paper we first show that without any information about the noise in covariates, currently established techniques of bounding statistical error of estimation fail to provide consistency guarantees. However, when information about noise covariance is available or can be estimated, then we prove consistency guarantees for any norm regularizer, which is a more general result than the state of the art. Next, we investigate empirical performance of structured estimation, specifically LASSO, when covariates are noisy and empirically show that LASSO is not consistent or stable in the presence of additive noise. However, prediction performance improves quite substantially when the noise covariance is available for incorporating in the estimator.}, 
   organization={SIAM}
 }
 
@@ -12,7 +13,8 @@
   author={Golnari, Golshan and Asiaee T., Amir and Banerjee, Arindam and Zhang, Zhi-Li},
   booktitle={31st Conference on Uncertainty in Artificial Intelligence (UAI)},
   pages={316--325},
-  year={2015}
+  year={2015},
+  abstract={Influence maximization in social networks has been studied extensively in computer science community for the last decade. However, almost all of the efforts have been focused on the \emph{progressive} influence models, such as independent cascade (IC) and Linear threshold (LT) models, which cannot capture the \textit{reversibility of choices}. In this paper, we present the Heat Conduction (HC) model which is a \textit{non-progressive influence model} and has favorable real-world interpretations. Moreover, we show that HC unifies, generalizes, and extends the existing non-progressive models, such as the Voter model \cite{even-dar_note_2007} and non-progressive LT \cite{kempe_maximizing_2003}. We  then prove that selecting the optimal seed set of influential nodes is NP-hard for HC but by establishing the submodularity of influence spread, we can tackle the influence maximization problem with a scalable and provably near-optimal greedy algorithm. To  the  best  of  our  knowledge, we  are  the  first  to present a scalable solution for influence maximization under non-progressive LT model, as a special case of HC model. In sharp contrast to the other greedy influence maximization methods, our fast and efficient \textsc{C2Greedy} algorithm benefits from two analytically computable steps: \emph{closed-form} computation for finding the influence spread as well as the greedy seed selection. Through extensive experiments on several and large real and synthetic networks, we show that \textsc{C2Greedy} outperforms the state-of-the-art methods, under HC model, in terms of both influence spread and scalability. } 
 }
 
 @incollection{asaa13,
@@ -21,7 +23,8 @@
   booktitle={Distributed Autonomous Robotic Systems},
   pages={389--402},
   year={2013},
-  publisher={Springer}
+  publisher={Springer},
+  abstract={Control of collective behavior is an active topic in biology, social, and computer science. In this work we investigate how a minority of informed agents can influence and control the whole society through local interactions. The problem we specifically target is that a minority of people with a bounded budget for initiating new social relations attempt to control the collective behavior of a society and move the crowd toward a specific goal. Assuming that local interactions can only take place between friends, the minority has to initiate some new relations with the majority. The total cost of new relations is limited to a budget. The problem is then finding the optimal links in order to gain maximum impact on the society. We will model the problem as a diffusion process in a social network. The proof of NP-hardness of the problem for Local Interaction Game model of diffusion is presented. Simulations show that the proposed method surpasses the popular strategies based on degree and distance centrality in performance.}
 }
 
 @inproceedings{atbs12,
@@ -30,7 +33,8 @@
   booktitle={21st ACM international conference on Information and knowledge management (CIKM)},
   pages={1602--1606},
   year={2012},
-  organization={ACM}
+  organization={ACM},
+  abstract={Extracting sentiment from Twitter data is one of the fundamental problems in social media analytics. Twitter's length constraint renders determining the positive/negative sentiment of a tweet difficult, even for a human judge. In this work we present a general framework for per-tweet (in contrast with batches of tweets) sentiment analysis which consists of: (1) extracting tweets about a desired target subject, (2) separating tweets with sentiment, and (3) setting apart positive from negative tweets. For each step, we study the performance of a number of classical and new machine learning algorithms. We also show that the intrinsic sparsity of tweets allows performing classification in a low dimensional space, via random projections, without losing accuracy. In addition, we present weighted variants of all employed algorithms, exploiting the available labeling uncertainty, which further improve classification accuracy. Finally, we show that spatially aggregating our per-tweet classification results produces a very satisfactory outcome, making our approach a good candidate for batch tweet sentiment analysis.}
 }
 
 

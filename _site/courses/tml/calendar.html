@@ -68,7 +68,7 @@
 
 
   <meta property="og:type" content="article">
-  <meta property="article:published_time" content="2018-01-04T22:20:23-05:00">
+  <meta property="article:published_time" content="2018-01-19T01:40:32-05:00">
 
 
 
@@ -280,7 +280,7 @@
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
     <meta itemprop="headline" content="Theoretical Machine Learning">
     <meta itemprop="description" content="Minimal Mistakes has been developed as a Jekyll theme gem for easier use. It is also 100% compatible with GitHub Pages — just with slightly different installation process.">
-    <meta itemprop="datePublished" content="January 04, 2018">
+    <meta itemprop="datePublished" content="January 19, 2018">
     
 
     <div class="page__inner-wrap">
@@ -313,7 +313,7 @@
 
 
         
-          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2018-01-04T22:20:23-05:00">January 04, 2018</time></p>
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Updated:</strong> <time datetime="2018-01-19T01:40:32-05:00">January 19, 2018</time></p>
         
       </footer>
 
@@ -372,6 +372,19 @@
 
 <div class="page__footer-copyright">&copy; 2018 Amir Asiaee T.. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	var str =$(this).attr('id');
+	
+    $("button").click(function(){
+        var str = $(this).attr('id');
+		var ret = str.split("_");
+		var id = ret[1];
+		$('#' + id).toggle();
+    });
+});
+</script>
       </footer>
     </div>
 

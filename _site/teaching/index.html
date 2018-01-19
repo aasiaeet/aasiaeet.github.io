@@ -226,10 +226,6 @@
     <button class="btn btn--inverse">Follow</button>
     <ul class="author__urls social-icons">
       
-        <li itemprop="homeLocation" itemscope itemtype="http://schema.org/Place">
-          <i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> <span itemprop="name">MBI, Ohio State University</span>
-        </li>
-      
 
       
 
@@ -340,7 +336,7 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="http://localhost:4000/courses/aml/info/" rel="permalink">Applied Machine Learning
+        <a href="http://localhost:4000/courses/aml18/info/" rel="permalink">Applied Machine Learning
 </a>
       
     </h2>
@@ -349,6 +345,8 @@
 </p>
   </article>
 </div>
+    
+  
     
   
     
@@ -393,118 +391,6 @@
   
     
   
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
 
   </div>
 </div>
@@ -540,6 +426,19 @@
 
 <div class="page__footer-copyright">&copy; 2018 Amir Asiaee T.. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	var str =$(this).attr('id');
+	
+    $("button").click(function(){
+        var str = $(this).attr('id');
+		var ret = str.split("_");
+		var id = ret[1];
+		$('#' + id).toggle();
+    });
+});
+</script>
       </footer>
     </div>
 

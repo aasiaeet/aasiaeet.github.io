@@ -5,7 +5,7 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # `jekyll serve`. If you change this file, please restart the server process.
 
-minimal_mistakes_skin    : "default"  #"air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "dark" #"default"  #"air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en"
@@ -87,7 +87,7 @@ author:
   name             : "Amir Asiaee T."
   avatar           : "/assets/images/shot.jpg"
   bio              : "Machine learning researcher dabbling in caner study."
-  location         : "MBI, Ohio State University"
+  location         : #"MBI, Ohio State University"
   email            : asiaeetaheri.1@osu.edu
   uri              :
   home             : # null (default), "absolute or relative url to link to author home"
@@ -214,7 +214,7 @@ scholar:
 
   source: ./_bibliography
   bibliography: papers.bib
-  bibliography_template: "{{reference}}"
+  bibliography_template: bibtemplate #"{{reference}}"
 
   replace_strings: true
   join_strings:    true
@@ -223,6 +223,8 @@ scholar:
   details_layout: bibtex.html
   details_link:   Details
 
+  repository: pdf
+  
   query: "@*"
  
 

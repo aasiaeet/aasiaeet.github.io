@@ -15,19 +15,19 @@ main:
 
  
   
-aml:
+aml18:
   - title: Applied ML 
     children:
       - title: "Info"
-        url: /courses/aml/info/
+        url: /courses/aml18/info/
       - title: "Syllabus"
-        url: /courses/aml/syllabus/
+        url: /courses/aml18/syllabus/
       - title: "Calendar"
-        url: /courses/aml/calendar/
+        url: /courses/aml18/calendar/
       - title: "Assignments"
-        url: /courses/aml/assignments/
+        url: /courses/aml18/assignments/
       - title: "Announcements"
-        url: /courses/aml/announcements/
+        url: /courses/aml18/announcements/
       
         
 tml:
