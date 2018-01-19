@@ -1,0 +1,24 @@
+---
+---
+
+{{reference}}
+
+    {% if entry.abstract %}
+    <button class="btn btnId" id="b_{{key}}-abstract" style="outline:none;">Abstract</button>
+    {% endif %}
+
+	<button class="btn btnId" id="b_{{key}}-bibtex" style="outline:none; position:relative;white-space: normal;">BibTeX</button>
+    
+    {% if link %}
+    <a href="{{link}}">Download</a>
+    {% endif %}
+
+	<div class="dropDownBibtex" id="{{key}}-bibtex">
+    <pre>{{entry.bibtex}}</pre>
+    </div>
+	
+	
+	<div class="dropDownAbstract" id="{{key}}-abstract">
+    {{entry.abstract}}
+    </div>
+	
