@@ -28,6 +28,12 @@ aml18:
         url: /courses/aml18/assignments/
       - title: "Announcements"
         url: /courses/aml18/announcements/
+  - title: Lecture Notes 
+    children:  
+      - title: "Lecture 01" 
+        url: /courses/aml18/lec/md/lec01/
+      - title: "Lecture 02" 
+        url: /courses/aml18/lec/md/lec02/
       
         
 tml:

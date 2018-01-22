@@ -18,7 +18,7 @@ baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : #"aasiaeet/aasiaeet"# GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
-words_per_minute         : 200
+words_per_minute         : 100
 comments:
   provider               : "staticman_v2" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2" "custom"
   disqus:
@@ -51,7 +51,7 @@ reCaptcha:
   secret                 : "vGjlzkDCNZ/lOlGbdKelGyiFZS7gfVVuvONhD+JDSVwmsUbYxdMl6dgtaF5XDaPRACNUZxWbXmyj4IwySivHvAjfIVYY17VxHHwSNh/Qz43AFNUf6tg8/ydUb1gGSLogUmvIhCVhnC+7KTB7z+PWFaxKRsIEzfKHHm+kmK6nFXo="
 atom_feed:
   path                   : # blank (default) uses feed.xml
-#read_more                : "enabled" # if enabled, adds a "read more" link to excerpts 
+  read_more              : "enabled" # if enabled, adds a "read more" link to excerpts 
 search                   : true #, false (default)
 
 # SEO Related
@@ -155,9 +155,12 @@ markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
 # Conversion
 markdown: kramdown
+kramdown:
+  math_engine: mathjax
+  
 highlighter: rouge
 lsi: false
-excerpt_separator: "\n\n"
+excerpt_separator: <!--more--> #"\n\n"
 incremental: false
 
 
@@ -223,7 +226,8 @@ scholar:
   details_layout: bibtex.html
   details_link:   Details
 
-  repository: pdf
+  repository: /publications
+  repository_file_delimiter: "." 
   
   query: "@*"
  
@@ -239,22 +243,22 @@ scholar:
 #  - <base_path/categories/my-awesome-category/index.html ~> path: /categories/
 #  - <base_path/my-awesome-category/index.html ~> path: /
 category_archive:
-  type: liquid
+  type: jekyll-archives
   path: /categories/
 tag_archive:
-  type: liquid
+  type: jekyll-archives
   path: /tags/
 # https://github.com/jekyll/jekyll-archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layouts:
+    category: archive-taxonomy
+    tag: archive-taxonomy
+  permalinks:
+    category: /categories/:name/
+    tag: /tags/:name/
 
 theme: minimal-mistakes-jekyll
 

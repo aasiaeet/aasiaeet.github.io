@@ -28,8 +28,8 @@ var idx = lunr(function () {
       
     
       this.add({
-          title: "Applied Machine Learning",
-          excerpt: "Lecture slides\n\n\n  \n    \n      Lecture Number\n      Notes\n      PDF\n      Content\n    \n  \n  \n    \n      1\n      00/00/00\n      00/00/00\n      Introduction and Logistic\n    \n  \n\n\n",
+          title: "Course Calendar",
+          excerpt: "You can find lecture dates, assignment out/due dates, project report deadlines, and exam dates in the following calendar. You can...",
           categories: [],
           tags: [],
           id: 2
@@ -38,10 +38,28 @@ var idx = lunr(function () {
     
       this.add({
           title: "Applied Machine Learning",
-          excerpt: "\n",
+          excerpt: "Welcome to applied machine learning, Fall 2018 course webpage!\n\n\n",
           categories: [],
           tags: [],
           id: 3
+      })
+      
+    
+      this.add({
+          title: "This is 1st lecture.",
+          excerpt: "Lecture 01 handout in PDF. In the morning Eat eggs Drink coffee In the evening Eat spaghetti Drink wine Conclusion...",
+          categories: [],
+          tags: [],
+          id: 4
+      })
+      
+    
+      this.add({
+          title: "This is lecture 2",
+          excerpt: "In the second\n\n\n  Eat eggs\n  Drink coffee\n\n\nIn the evening\n\n\n  Eat spaghetti\n  Drink wine\n\n\nConclusion\n\n\n  And the answer is…\n  \n    \n  \n\n",
+          categories: [],
+          tags: [],
+          id: 5
       })
       
     
@@ -50,61 +68,7 @@ var idx = lunr(function () {
           excerpt: "\n",
           categories: [],
           tags: [],
-          id: 4
-      })
-      
-    
-      this.add({
-          title: "Introduction and Logistics",
-          excerpt: "In the morning Eat eggs Drink coffee In the evening Eat spaghetti Drink wine Conclusion And the answer is… $f(x)=\\sum_{n=0}^\\infty\\frac{f^{(n)}(a)}{n!}(x-a)^n$...",
-          categories: [],
-          tags: [],
-          id: 5
-      })
-      
-    
-      this.add({
-          title: "Theoretical Machine Learning",
-          excerpt: "Minimal Mistakes has been developed as a Jekyll theme gem for easier use. It is also 100% compatible with GitHub...",
-          categories: [],
-          tags: [],
           id: 6
-      })
-      
-    
-      this.add({
-          title: "Theoretical Machine Learning",
-          excerpt: "Minimal Mistakes has been developed as a Jekyll theme gem for easier use. It is also 100% compatible with GitHub...",
-          categories: [],
-          tags: [],
-          id: 7
-      })
-      
-    
-      this.add({
-          title: "Theoretical Machine Learning",
-          excerpt: "Minimal Mistakes has been developed as a Jekyll theme gem for easier use. It is also 100% compatible with GitHub...",
-          categories: [],
-          tags: [],
-          id: 8
-      })
-      
-    
-      this.add({
-          title: "Theoretical Machine Learning",
-          excerpt: "\n",
-          categories: [],
-          tags: [],
-          id: 9
-      })
-      
-    
-      this.add({
-          title: "Theoretical Machine Learning",
-          excerpt: "You can also install the theme by copying all of the theme files[^structure] into your project. To do so fork...",
-          categories: [],
-          tags: [],
-          id: 10
       })
       
     
@@ -116,7 +80,7 @@ var idx = lunr(function () {
           excerpt: "Major Lessons What is a Data Frame? Compared to intellectual math challenges, technological issues are very mind scratching for me....",
           categories: ["DailyReport"],
           tags: ["R","data.frame"],
-          id: 11
+          id: 7
       })
       
     
@@ -125,6 +89,42 @@ var idx = lunr(function () {
           excerpt: "Major Lessons Merge Data Frames I needed to concatenate two data frames which had row names. The regular method is...",
           categories: ["DailyReport"],
           tags: ["R","data.frame"],
+          id: 8
+      })
+      
+    
+      this.add({
+          title: "Indexing with Factors",
+          excerpt: "Major Lessons I spent a cycle figuring this out: Any non-numeric thing that you read from a data file is...",
+          categories: ["DailyReport"],
+          tags: ["R","factor"],
+          id: 9
+      })
+      
+    
+      this.add({
+          title: "Indexing with Factors",
+          excerpt: "Major Lessons I spent a cycle figuring this out: Any non-numeric thing that you read from a data file is...",
+          categories: ["DailyReport"],
+          tags: ["R","factor"],
+          id: 10
+      })
+      
+    
+      this.add({
+          title: "Indexing with Factors",
+          excerpt: "Major Lessons I spent a cycle figuring this out: Any non-numeric thing that you read from a data file is...",
+          categories: ["DailyReport"],
+          tags: ["R","factor"],
+          id: 11
+      })
+      
+    
+      this.add({
+          title: "The curious case of Ibrutinib-resistant CLL: Does Reverse-Mutations Exist?",
+          excerpt: "This came up during our lab meeting today with my great postdoc mentor Professor Kevin Coombes. I asked a dumb...",
+          categories: ["DailyReport"],
+          tags: ["CLL","cancer"],
           id: 12
       })
       
@@ -139,10 +139,10 @@ var idx = lunr(function () {
       
     
       this.add({
-          title: "Indexing with Factors",
-          excerpt: "Major Lessons I spent a cycle figuring this out: Any non-numeric thing that you read from a data file is...",
+          title: "Writing Math in Jekyll with KaTex",
+          excerpt: "",
           categories: ["DailyReport"],
-          tags: ["R","factor"],
+          tags: ["Jekyll","KaTex"],
           id: 14
       })
       
@@ -181,9 +181,9 @@ var store = [
     
       
       {
-        "title": "Applied Machine Learning",
+        "title": "Course Calendar",
         "url": "http://localhost:4000/courses/aml18/calendar",
-        "excerpt": "Lecture slides\n\n\n  \n    \n      Lecture Number\n      Notes\n      PDF\n      Content\n    \n  \n  \n    \n      1\n      00/00/00\n      00/00/00\n      Introduction and Logistic\n    \n  \n\n\n",
+        "excerpt": "You can find lecture dates, assignment out/due dates, project report deadlines, and exam dates in the following calendar. You can...",
         "teaser":
           
             null
@@ -193,8 +193,30 @@ var store = [
       
       {
         "title": "Applied Machine Learning",
-        "url": "http://localhost:4000/courses/aml18/info/",
-        "excerpt": "\n",
+        "url": "http://localhost:4000/courses/aml18/info",
+        "excerpt": "Welcome to applied machine learning, Fall 2018 course webpage!\n\n\n",
+        "teaser":
+          
+            null
+          
+      },
+    
+      
+      {
+        "title": "This is 1st lecture.",
+        "url": "http://localhost:4000/courses/aml18/lec/md/lec01",
+        "excerpt": "Lecture 01 handout in PDF. In the morning Eat eggs Drink coffee In the evening Eat spaghetti Drink wine Conclusion...",
+        "teaser":
+          
+            null
+          
+      },
+    
+      
+      {
+        "title": "This is lecture 2",
+        "url": "http://localhost:4000/courses/aml18/lec/md/lec02",
+        "excerpt": "In the second\n\n\n  Eat eggs\n  Drink coffee\n\n\nIn the evening\n\n\n  Eat spaghetti\n  Drink wine\n\n\nConclusion\n\n\n  And the answer is…\n  \n    \n  \n\n",
         "teaser":
           
             null
@@ -212,72 +234,6 @@ var store = [
           
       },
     
-      
-      {
-        "title": "Introduction and Logistics",
-        "url": "http://localhost:4000/courses/aml18/test",
-        "excerpt": "In the morning Eat eggs Drink coffee In the evening Eat spaghetti Drink wine Conclusion And the answer is… $f(x)=\\sum_{n=0}^\\infty\\frac{f^{(n)}(a)}{n!}(x-a)^n$...",
-        "teaser":
-          
-            null
-          
-      },
-    
-      
-      {
-        "title": "Theoretical Machine Learning",
-        "url": "http://localhost:4000/courses/tml/announcements",
-        "excerpt": "Minimal Mistakes has been developed as a Jekyll theme gem for easier use. It is also 100% compatible with GitHub...",
-        "teaser":
-          
-            null
-          
-      },
-    
-      
-      {
-        "title": "Theoretical Machine Learning",
-        "url": "http://localhost:4000/courses/tml/assignments",
-        "excerpt": "Minimal Mistakes has been developed as a Jekyll theme gem for easier use. It is also 100% compatible with GitHub...",
-        "teaser":
-          
-            null
-          
-      },
-    
-      
-      {
-        "title": "Theoretical Machine Learning",
-        "url": "http://localhost:4000/courses/tml/calendar",
-        "excerpt": "Minimal Mistakes has been developed as a Jekyll theme gem for easier use. It is also 100% compatible with GitHub...",
-        "teaser":
-          
-            null
-          
-      },
-    
-      
-      {
-        "title": "Theoretical Machine Learning",
-        "url": "http://localhost:4000/courses/tml/info",
-        "excerpt": "\n",
-        "teaser":
-          
-            null
-          
-      },
-    
-      
-      {
-        "title": "Theoretical Machine Learning",
-        "url": "http://localhost:4000/courses/tml/syllabus",
-        "excerpt": "You can also install the theme by copying all of the theme files[^structure] into your project. To do so fork...",
-        "teaser":
-          
-            null
-          
-      },
-    
   
     
     
@@ -285,7 +241,7 @@ var store = [
       
       {
         "title": "Indexing Data Frames in R",
-        "url": "http://localhost:4000/dailyreport/rindexing/",
+        "url": "http://localhost:4000/dailyreport/r-indexing/",
         "excerpt": "Major Lessons What is a Data Frame? Compared to intellectual math challenges, technological issues are very mind scratching for me....",
         "teaser":
           
@@ -296,7 +252,7 @@ var store = [
       
       {
         "title": "Merging Data Frames in R by Row Names",
-        "url": "http://localhost:4000/dailyreport/rmerge/",
+        "url": "http://localhost:4000/dailyreport/r-merge/",
         "excerpt": "Major Lessons Merge Data Frames I needed to concatenate two data frames which had row names. The regular method is...",
         "teaser":
           
@@ -307,7 +263,7 @@ var store = [
       
       {
         "title": "Indexing with Factors",
-        "url": "http://localhost:4000/dailyreport/rfactorindexing/",
+        "url": "http://localhost:4000/dailyreport/pandoc/",
         "excerpt": "Major Lessons I spent a cycle figuring this out: Any non-numeric thing that you read from a data file is...",
         "teaser":
           
@@ -318,8 +274,52 @@ var store = [
       
       {
         "title": "Indexing with Factors",
-        "url": "http://localhost:4000/dailyreport/gitlab-bitbucket-googledrive/",
+        "url": "http://localhost:4000/dailyreport/r-factor-indexing/",
         "excerpt": "Major Lessons I spent a cycle figuring this out: Any non-numeric thing that you read from a data file is...",
+        "teaser":
+          
+            null
+          
+      },
+    
+      
+      {
+        "title": "Indexing with Factors",
+        "url": "http://localhost:4000/dailyreport/gitlab-bitbucket-googledrive-Copy/",
+        "excerpt": "Major Lessons I spent a cycle figuring this out: Any non-numeric thing that you read from a data file is...",
+        "teaser":
+          
+            null
+          
+      },
+    
+      
+      {
+        "title": "The curious case of Ibrutinib-resistant CLL: Does Reverse-Mutations Exist?",
+        "url": "http://localhost:4000/dailyreport/cll-ibrutinib-resistence/",
+        "excerpt": "This came up during our lab meeting today with my great postdoc mentor Professor Kevin Coombes. I asked a dumb...",
+        "teaser":
+          
+            null
+          
+      },
+    
+      
+      {
+        "title": "Indexing with Factors",
+        "url": "http://localhost:4000/dailyreport/jekyll-scholar/",
+        "excerpt": "Major Lessons I spent a cycle figuring this out: Any non-numeric thing that you read from a data file is...",
+        "teaser":
+          
+            null
+          
+      },
+    
+      
+      {
+        "title": "Writing Math in Jekyll with KaTex",
+        "url": "http://localhost:4000/dailyreport/jekyll-scholar2/",
+        "excerpt": "",
         "teaser":
           
             null

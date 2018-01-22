@@ -1,0 +1,47 @@
+\documentclass[]{article}
+
+
+
+
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage{makecell}
+\usepackage{url}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{array}
+\usepackage{times,color}
+\usepackage[rflt]{floatflt}
+\usepackage{epsfig,times,graphicx}
+\usepackage{amsmath,amssymb,amsopn,algorithm,algorithmic,theorem,float,bbm,bm,enumerate,color,multirow}
+\usepackage{rotating}
+\usepackage{array}
+%\usepackage{slashbox}
+\usepackage{makecell}
+\usepackage{multirow}
+\usepackage{hhline}
+\usepackage{xspace}
+\usepackage{mathtools}
+\usepackage{bm}
+
+\input{notation}
+
+%opening
+\title{Structured High Dimensional Data Sharing Model}
+\author{}
+
+
+
+\begin{document}
+	
+		\maketitle 
+		Consider the regression problem when we have a meaningful grouping in the sample space. 
+		We want to exploit this knowledge and perform better in the prediction and parameter estimation tasks. 
+		The (linear) data sharing (DS) model considers the following relation between covariates and the output:
+		\be 
+		y_i = \x_i (\bbeta_0 + \bbeta_g) + \epsilon_i 
+		\ee 
+		where $\bbeta_0$ and $\bbeta_g$ are shared (between all groups of samples) and the private (to group $g$) parameters respectively. 
+		High dimensional structured data sharing model considers the DS when the number of features is much larger than samples and parameters have structure such as sparsity or group sparsity.
+		We consider the general form of data sharing where the structure of both shared and private parameters can be characterized by any norm $R(\cdot)$. 		
+\end{document}

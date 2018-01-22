@@ -2,10 +2,35 @@
    Amir's 
    ========================================================================== */
    
+$abstract-color                : #009628 !default;  
+$BibTex-color                  : #b201a6 !default;  
+$download-color                : #b51b00 !default;  
+$supplement-color              : #abb500 !default;   
+   
 .btnId{
 	display: inline-block;
 }
-   
+
+@mixin btnPub($btnPub-color) {
+	border: 3px solid mix(#252a34, $btnPub-color, 10%);
+}
+
+.btnPub--abstract{
+	@include btnPub($abstract-color);
+}
+
+.btnPub--BibTex{
+	@include btnPub($BibTex-color);
+}
+ 
+.btnPub--download{
+	@include btnPub($download-color);
+}
+ 
+.btnPub--supplement{
+	@include btnPub($supplement-color);
+}
+
 .dropDownAbstract{
 	font-size: $type-size-8;
 	display: none; 
@@ -19,3 +44,5 @@
 	display:none; 
 	position:relative;
 }
+
+.katex { font-size: 1em !important; }
