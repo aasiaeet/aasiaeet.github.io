@@ -43,12 +43,12 @@ staticman:
     email                : "md5"
   generatedFields:
     date:
-      type               : "date"
+      type               : "date"   
       options:
         format           : "iso8601" #(default), "timestamp-seconds", "timestamp-milliseconds"
 reCaptcha:
-  siteKey                : "6Lce8D4UAAAAAPdjVrm6N8v-s7s-3lXXf8UvKdog"
-  secret                 : "vGjlzkDCNZ/lOlGbdKelGyiFZS7gfVVuvONhD+JDSVwmsUbYxdMl6dgtaF5XDaPRACNUZxWbXmyj4IwySivHvAjfIVYY17VxHHwSNh/Qz43AFNUf6tg8/ydUb1gGSLogUmvIhCVhnC+7KTB7z+PWFaxKRsIEzfKHHm+kmK6nFXo="
+  siteKey                : "6Lc7B0IUAAAAAGkrfDZi3TkUVhGbHkbalH48cgrI"
+  secret                 : "gEJz7gReyBiVa6PbE1yBTZpXDhRWanIfvZg4BGHrdF0IySFj3XqUhFvTKEyNxJf6N2XWNUyak2OQZysDCHBgZIgejIEAX3koaebMMuqyoaWq6+c9t4mc22olHlcyR5rMAJwbPemfrV7CGMZNB0WwnGJkMGNDtbHkqG7g02gyXGk="
 atom_feed:
   path                   : # blank (default) uses feed.xml
   read_more              : "enabled" # if enabled, adds a "read more" link to excerpts 
