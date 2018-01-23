@@ -48,7 +48,7 @@ staticman:
         format           : "iso8601" #(default), "timestamp-seconds", "timestamp-milliseconds"
 reCaptcha:
   siteKey                : "6Lc7B0IUAAAAAGkrfDZi3TkUVhGbHkbalH48cgrI"
-  secret                 : "gEJz7gReyBiVa6PbE1yBTZpXDhRWanIfvZg4BGHrdF0IySFj3XqUhFvTKEyNxJf6N2XWNUyak2OQZysDCHBgZIgejIEAX3koaebMMuqyoaWq6+c9t4mc22olHlcyR5rMAJwbPemfrV7CGMZNB0WwnGJkMGNDtbHkqG7g02gyXGk="
+  secret                 : "yNV5SrA6V5yhE8POqwCdEOUFgbWYA4+V50WoqYEddcA/hiMvw96K0FDbaCQxbVnYBMk05WS0h9LIYBBxBbnUYcSLQZS842BKlhoEyyLzZPmIE/9agW+9Mtjjnn7yFXbqOE+OlALwoWK0XrHqhzRmHce9HnAulQO4OEaJAOEON6g="
 atom_feed:
   path                   : # blank (default) uses feed.xml
   read_more              : "enabled" # if enabled, adds a "read more" link to excerpts 
