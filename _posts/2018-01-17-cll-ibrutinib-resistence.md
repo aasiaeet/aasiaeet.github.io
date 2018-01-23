@@ -1,11 +1,11 @@
 ---
 title:  "The curious case of Ibrutinib-resistant CLL: Does Reverse-Mutations Exist?"
+comments: true 
 categories: 
   - DailyReport 
 tag: 
   - CLL
   - cancer
-comments: true 
 --- 
 
 
