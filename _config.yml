@@ -16,7 +16,7 @@ title_separator          : "-"
 name                     : "Amir Asiaee T."
 description              : "Personal website and blog. "
 url                      : "https://aasiaeet.netlify.com" 
-baseurl                  : #"" # the subpath of your site, e.g. "/blog"
+baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "aasiaeet/aasiaeet.github.io" 
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
