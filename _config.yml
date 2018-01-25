@@ -7,6 +7,8 @@
 
 minimal_mistakes_skin    : "dark" #"default"  #"air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 ##"https://aasiaeet.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+#"aasiaeet/aasiaeet"# GitHub username/repo-name .g. "mmistakes/minimal-mistakes"
+
 # Site Settings
 locale                   : "en"
 title                    : "Amir Asiaee"
@@ -15,7 +17,7 @@ name                     : "Amir Asiaee T."
 description              : "Personal website and blog. "
 url                      : "https://aasiaeet.netlify.com" 
 baseurl                  : #"" # the subpath of your site, e.g. "/blog"
-repository               : "https://github.com/aasiaeet/aasiaeet.github.io" #"aasiaeet/aasiaeet"# GitHub username/repo-name .g. "mmistakes/minimal-mistakes"
+repository               : "aasiaeet/aasiaeet.github.io" 
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 100
