@@ -1,5 +1,5 @@
 ---
-title:  "The curious case of Ibrutinib-resistant CLL: Does Reverse-Mutations Exist?"
+title:  "The Curious Case of Ibrutinib-resistant CLL: Does Reverse-Mutations Exist? - Part I"
 comments: true 
 categories: 
   - DailyReport 
@@ -13,66 +13,23 @@ This came up during our lab meeting today with my great postdoc mentor Professor
 <!--more-->
 
 I asked a dumb question like: can mutations reverse during the growth of the cancer tumor? 
-The short answer is no, but instead of that, like always, he came up with an eloquent explanation which involved a contrived example. 
+The short answer is no, but instead of that, like always, he came up with an eloquent explanation with a contrived example. 
 I don't want to repeat him (because those are not my words and therefore I can't claim that I understood the argument!), so the following with all of its shortcomings is my recall of his argument.
 
 # Major Lessons
 
-Consider the regression problem when we have a meaningful grouping in
-the sample space. We want to exploit this knowledge and perform better
-in the prediction and parameter estimation tasks. The (linear) data
-sharing (DS) model considers the following relation between covariates
-and the output: 
+Assume a universe with only length one mutation where no deletion, insertion, etc. are possible. In other words, consider only missense/nonsense point mutations. Take the average length of a human gene to be roughly 50 kbp and assume 20000 gene exist. Therefore the probability of a mutation happening in a base pair is $$10^{-9}$$, and this mutation should escapes every checkpoints and control mechanisms that prevent such a mutated cell to sustain and proliferate. For simplicity, we ignore the probability of a mutation "escaping through a mesh"[^1] of counter cancer measure. 
 
-$$\begin{aligned}
-	y_i = \mathbf{x}_i ({\beta}_0 + {\beta}_g) + \epsilon_i 
-\end{aligned}$$ 
+[^1]: [Gordon's theorem](https://dustingmixon.wordpress.com/2014/02/08/gordons-escape-through-a-mesh-theorem/) on a random subspace escaping through a subset of hypersphere. 
 
-where $${\beta}_0$$ and $${\beta}_g$$ are shared
-(between all groups of samples) and the private (to group $g$)
-parameters respectively. High dimensional structured data sharing model
-considers the DS when the number of features is much larger than samples
-and parameters have structure such as sparsity or group sparsity. We
-consider the general form of data sharing where the structure of both
-shared and private parameters can be characterized by any norm
-$$R(\cdot)$$.
+So to reverse this mutation we need a change in the exact same spot on the DNA and we need to convert it to one of the, say, two neutral SNP allele. Such an event has the probability of $$\frac{1}{4} \times 10^{-18}$$ which is considered zero in most branches of science. 
 
-$$\begin{aligned}
-	y_i &= \mathbf{x}_i ({\beta}_0 + {\beta}_g) + \epsilon_i 
-	\\ 
-	&\leq 2
-\end{aligned}$$ 
+Now the question is that why in we see some tumor sub-clones which does not have certain mutations. If the whole cancer definition is "accumulation of somatic mutation" and there is no going back after a mutation, then one would expect that all sub-clones have a similar core of mutation tree and only different leaves. 
 
-> test this 
+Adding to my confusion, Kevin showed us a recent data from CLL patients treated with Ibrutinib[^2], a BTK inhibitor, and relapsed. The idea is to store blood samples without sequencing it, and when a patient relapsed go back and sequence the data to see if there is any meaningful predictor for the relapse before the actual detection of the mutation.  
 
-Assume a universe with only length one mutation where no deletion, insertion, etc. are possible. In other words, consider only missense/nonsense point mutations. Take the average length of a human gene roughly as 50 kbp and assume 20000 gene exist. Therefore the probability of a mutation happening is    and \[10^{-9}\], and this mutation should provide the cell with a selective advantage which makes it cancerous. 
+[^2]: In 2013 Ibrutinib was introduced as a [targeted treatment](http://www.nejm.org/doi/full/10.1056/NEJMoa1215637) for relapsed/re-factored CLL patients harboring mutations in TP53 or deletion of 17p. [Two years later](http://www.nejm.org/doi/full/10.1056/NEJMoa1509388), it was suggested as an effective first line of attack for CLL. But as Kevin mentioned, I didn't check, the relapse (and/or drug resistant) rate after treatment is high when the patients pass the two years milestones, and ironically both studied followed up patients for about 2 years and missed this major issue. 
 
-$$
-\begin{aligned}
-g^2 &= 10^{-9} 
-\\  
-&\geq \int_{0}^\infty
-\end{aligned}
-$$
+Looking at the history of mutation allele frequency of an important genes (BTK and PLCG2), in some patients we observe an odd phenomena. We see a slow rise of those mutation over time and a sharp drop a few month before the actual relapse/resistant diagnosis. It seems PLCG2 mutation was reversing! 
 
-
-So to reverse this mutation we need a change in the exact same spot on the DNA and we need to convert it to one of the, say, two neutral SNP allele. This event has the probability of $$\frac{1}{4} \times 10^{-18}$$ which is considered zero in most branches of science. 
-
-Now the question is that why in we see some 
-
-
-Any non-numeric thing that you read from a data file is going to be a factor, i.e., categorical data. 
-{: .notice--warning} 
-
-Factors are implemented as numerics/integers in R. So when you use them to index another construct which has row/column name as character you need to do so by `as.character()`.
-{: .notice--danger}
-
-Here is a typical scenario: You read a column from a file and use it to index some construct. 
-You either should read the column as string:
-```R
-myDataFrame <- read.csv("path/to/file.csv", stringsAsFactors=FALSE)
-```
-or convert the factors using as.character before indexing another construct:
-```R
-a <- myDataFrame2[as.character(myFactor)]
-```
+So how should we explain this?!

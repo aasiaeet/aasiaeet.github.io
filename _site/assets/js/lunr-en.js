@@ -94,8 +94,8 @@ var idx = lunr(function () {
       
     
       this.add({
-          title: "Indexing with Factors",
-          excerpt: "Major Lessons I spent a cycle figuring this out: Any non-numeric thing that you read from a data file is...",
+          title: "Introducing Pandoc",
+          excerpt: "I was trying to figure out a way to write math heavy blog posts. There are well known JavaScript libraries...",
           categories: ["DailyReport"],
           tags: ["R","factor"],
           id: 9
@@ -112,16 +112,16 @@ var idx = lunr(function () {
       
     
       this.add({
-          title: "Indexing with Factors",
-          excerpt: "Major Lessons I spent a cycle figuring this out: Any non-numeric thing that you read from a data file is...",
+          title: "The Painful Part of Collaboration: Version Control and Shared Storage Spaces",
+          excerpt: "Major Lessons\n\n",
           categories: ["DailyReport"],
-          tags: ["R","factor"],
+          tags: ["GitLab","GitHub","GoogleDrive","VersionControl"],
           id: 11
       })
       
     
       this.add({
-          title: "The curious case of Ibrutinib-resistant CLL: Does Reverse-Mutations Exist?",
+          title: "The Curious Case of Ibrutinib-resistant CLL: Does Reverse-Mutations Exist? - Part I",
           excerpt: "This came up during our lab meeting today with my great postdoc mentor Professor Kevin Coombes. I asked a dumb...",
           categories: ["DailyReport"],
           tags: ["CLL","cancer"],
@@ -130,20 +130,38 @@ var idx = lunr(function () {
       
     
       this.add({
-          title: "Indexing with Factors",
-          excerpt: "Major Lessons I spent a cycle figuring this out: Any non-numeric thing that you read from a data file is...",
+          title: "Introducing the Jekyll-Scholar",
+          excerpt: "Major Lessons\n\n",
           categories: ["DailyReport"],
-          tags: ["R","factor"],
+          tags: ["Jekyll","Plugin"],
           id: 13
       })
       
     
       this.add({
-          title: "Writing Math in Jekyll with KaTex",
-          excerpt: "",
+          title: "Gender Pay Gap, Why?",
+          excerpt: "I’m fortunate to be a postdoc at the MBI instead of a member of a regular lab. Here, there is...",
           categories: ["DailyReport"],
-          tags: ["Jekyll","KaTex"],
+          tags: ["ProfessionalDevelopement","JordanBPeterson"],
           id: 14
+      })
+      
+    
+      this.add({
+          title: "Gender Pay Gap, Why?",
+          excerpt: "I’m fortunate to be a postdoc at the MBI instead of a member of a regular lab. Here, there is...",
+          categories: ["DailyReport"],
+          tags: ["ProfessionalDevelopement","JordanBPeterson"],
+          id: 15
+      })
+      
+    
+      this.add({
+          title: "Gender Pay Gap, Why?",
+          excerpt: "I’m fortunate to be a postdoc at the MBI instead of a member of a regular lab. Here, there is...",
+          categories: ["DailyReport"],
+          tags: ["ProfessionalDevelopement","JordanBPeterson"],
+          id: 16
       })
       
     
@@ -262,9 +280,9 @@ var store = [
     
       
       {
-        "title": "Indexing with Factors",
+        "title": "Introducing Pandoc",
         "url": "http://localhost:4000/dailyreport/pandoc/",
-        "excerpt": "Major Lessons I spent a cycle figuring this out: Any non-numeric thing that you read from a data file is...",
+        "excerpt": "I was trying to figure out a way to write math heavy blog posts. There are well known JavaScript libraries...",
         "teaser":
           
             null
@@ -284,9 +302,9 @@ var store = [
     
       
       {
-        "title": "Indexing with Factors",
+        "title": "The Painful Part of Collaboration: Version Control and Shared Storage Spaces",
         "url": "http://localhost:4000/dailyreport/gitlab-bitbucket-googledrive-Copy/",
-        "excerpt": "Major Lessons I spent a cycle figuring this out: Any non-numeric thing that you read from a data file is...",
+        "excerpt": "Major Lessons\n\n",
         "teaser":
           
             null
@@ -295,7 +313,7 @@ var store = [
     
       
       {
-        "title": "The curious case of Ibrutinib-resistant CLL: Does Reverse-Mutations Exist?",
+        "title": "The Curious Case of Ibrutinib-resistant CLL: Does Reverse-Mutations Exist? - Part I",
         "url": "http://localhost:4000/dailyreport/cll-ibrutinib-resistence/",
         "excerpt": "This came up during our lab meeting today with my great postdoc mentor Professor Kevin Coombes. I asked a dumb...",
         "teaser":
@@ -306,9 +324,9 @@ var store = [
     
       
       {
-        "title": "Indexing with Factors",
+        "title": "Introducing the Jekyll-Scholar",
         "url": "http://localhost:4000/dailyreport/jekyll-scholar/",
-        "excerpt": "Major Lessons I spent a cycle figuring this out: Any non-numeric thing that you read from a data file is...",
+        "excerpt": "Major Lessons\n\n",
         "teaser":
           
             null
@@ -317,9 +335,31 @@ var store = [
     
       
       {
-        "title": "Writing Math in Jekyll with KaTex",
-        "url": "http://localhost:4000/dailyreport/jekyll-scholar2/",
-        "excerpt": "",
+        "title": "Gender Pay Gap, Why?",
+        "url": "http://localhost:4000/dailyreport/gender-pay-gap-Copy-(2)/",
+        "excerpt": "I’m fortunate to be a postdoc at the MBI instead of a member of a regular lab. Here, there is...",
+        "teaser":
+          
+            null
+          
+      },
+    
+      
+      {
+        "title": "Gender Pay Gap, Why?",
+        "url": "http://localhost:4000/dailyreport/gender-pay-gap/",
+        "excerpt": "I’m fortunate to be a postdoc at the MBI instead of a member of a regular lab. Here, there is...",
+        "teaser":
+          
+            null
+          
+      },
+    
+      
+      {
+        "title": "Gender Pay Gap, Why?",
+        "url": "http://localhost:4000/dailyreport/elastic-net-intuition/",
+        "excerpt": "I’m fortunate to be a postdoc at the MBI instead of a member of a regular lab. Here, there is...",
         "teaser":
           
             null
