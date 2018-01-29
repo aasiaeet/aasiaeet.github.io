@@ -4,13 +4,12 @@ categories:
   - DailyReport 
 tag: 
   - R
-  - factor   
+  - Factor   
 ---
 
+I spent a cycle figuring out, how R treats factors as an index.
+
 # Major Lessons
-
-I spent a cycle figuring this out:
-
 
 Any non-numeric thing that you read from a data file is going to be a factor, i.e., categorical data. 
 {: .notice--warning} 

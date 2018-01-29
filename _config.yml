@@ -144,14 +144,14 @@ kramdown:
   
 highlighter: rouge
 lsi: false
-excerpt_separator: <!--more--> #"\n\n"
+excerpt_separator: "\n\n" #"<!--more-->"
 incremental: false
 
 
 # Markdown Processing
 kramdown:
   input: GFM
-  hard_wrap: false
+  hard_wrap: true 
   auto_ids: true
   footnote_nr: 1
   entity_output: as_char

@@ -5,8 +5,9 @@ categories:
 tag: 
   - R
   - data.frame 
-comments: true 
 ---
+
+R provides many methods for indexing. Coming from other languages, it takes time to get comfortable with indexing in R. 
 
 # Major Lessons
 

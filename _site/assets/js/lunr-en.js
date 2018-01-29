@@ -77,7 +77,7 @@ var idx = lunr(function () {
     
       this.add({
           title: "Indexing Data Frames in R",
-          excerpt: "Major Lessons What is a Data Frame? Compared to intellectual math challenges, technological issues are very mind scratching for me....",
+          excerpt: "R provides many methods for indexing. Coming from other languages, it takes time to get comfortable with indexing in R....",
           categories: ["DailyReport"],
           tags: ["R","data.frame"],
           id: 7
@@ -86,7 +86,7 @@ var idx = lunr(function () {
     
       this.add({
           title: "Merging Data Frames in R by Row Names",
-          excerpt: "Major Lessons Merge Data Frames I needed to concatenate two data frames which had row names. The regular method is...",
+          excerpt: "I was trying to read in different features for a cell line, e.g., mutations and expression from separate files and...",
           categories: ["DailyReport"],
           tags: ["R","data.frame"],
           id: 8
@@ -95,73 +95,100 @@ var idx = lunr(function () {
     
       this.add({
           title: "Introducing Pandoc",
-          excerpt: "I was trying to figure out a way to write math heavy blog posts. There are well known JavaScript libraries...",
+          excerpt: "I was trying to figure out a way to write math heavy blog posts where I found Pandoc. There are...",
           categories: ["DailyReport"],
-          tags: ["R","factor"],
+          tags: ["Pandoc","MarkDown","KaTex"],
           id: 9
       })
       
     
       this.add({
-          title: "Indexing with Factors",
-          excerpt: "Major Lessons I spent a cycle figuring this out: Any non-numeric thing that you read from a data file is...",
+          title: "Setting up KaTex for Jekyll",
+          excerpt: "KaTex, the fastest library for displaying math on browsers, gradually increased its supported latex functions and is passing its rival...",
           categories: ["DailyReport"],
-          tags: ["R","factor"],
+          tags: ["KaTex","Jekyll","MathJax","Pandoc"],
           id: 10
       })
       
     
       this.add({
-          title: "The Painful Part of Collaboration: Version Control and Shared Storage Spaces",
-          excerpt: "Major Lessons\n\n",
+          title: "Indexing with Factors",
+          excerpt: "I spent a cycle figuring out, how R treats factors as an index. Major Lessons Any non-numeric thing that you...",
           categories: ["DailyReport"],
-          tags: ["GitLab","GitHub","GoogleDrive","VersionControl"],
+          tags: ["R","Factor"],
           id: 11
       })
       
     
       this.add({
-          title: "The Curious Case of Ibrutinib-resistant CLL: Does Reverse-Mutations Exist? - Part I",
-          excerpt: "This came up during our lab meeting today with my great postdoc mentor Professor Kevin Coombes. I asked a dumb...",
+          title: "The Painful Part of Collaboration: Version Control and Shared Storage Spaces",
+          excerpt: "Anyone who had online collaboration experience faced this question one way or another: What is a good version control system...",
           categories: ["DailyReport"],
-          tags: ["CLL","cancer"],
+          tags: ["GitLab","GitHub","Google Drive","Version Control"],
           id: 12
       })
       
     
       this.add({
-          title: "Introducing the Jekyll-Scholar",
-          excerpt: "Major Lessons\n\n",
+          title: "The Curious Case of Ibrutinib-resistant CLL: Does Reverse-Mutations Exist? - Part I",
+          excerpt: "The question is, can mutations vanish themselves? We discussed an applied example of CLL treatment with Ibrutinib. The following came...",
           categories: ["DailyReport"],
-          tags: ["Jekyll","Plugin"],
+          tags: ["CLL","Cancer","Ibrutinib","Drug Resistance"],
           id: 13
       })
       
     
       this.add({
-          title: "Gender Pay Gap, Why?",
-          excerpt: "I’m fortunate to be a postdoc at the MBI instead of a member of a regular lab. Here, there is...",
+          title: "Introducing Jekyll-Scholar",
+          excerpt: "Jekyll-Scholar is formatting references and citations on Jekyll blogs and “formats your bibliographies and reading lists for the web and...",
           categories: ["DailyReport"],
-          tags: ["ProfessionalDevelopement","JordanBPeterson"],
+          tags: ["Jekyll","Plugin"],
           id: 14
       })
       
     
       this.add({
           title: "Gender Pay Gap, Why?",
-          excerpt: "I’m fortunate to be a postdoc at the MBI instead of a member of a regular lab. Here, there is...",
+          excerpt: "A reason for the gender pay gap and how to avoid it came up in our discussions with early career...",
           categories: ["DailyReport"],
-          tags: ["ProfessionalDevelopement","JordanBPeterson"],
+          tags: ["Professional Development","Jordan B. Peterson"],
           id: 15
       })
       
     
       this.add({
-          title: "Gender Pay Gap, Why?",
-          excerpt: "I’m fortunate to be a postdoc at the MBI instead of a member of a regular lab. Here, there is...",
+          title: "Staticman vs. Disqus",
+          excerpt: "On several rounds of effort, I tried to use Staticman as the comment manager service for this blog. I failed...",
           categories: ["DailyReport"],
-          tags: ["ProfessionalDevelopement","JordanBPeterson"],
+          tags: ["Staticman","Disqus","Jekyll"],
           id: 16
+      })
+      
+    
+      this.add({
+          title: "Elastic Net: An Intuitive Explanation",
+          excerpt: "Elastic net is a proper tool when we have lots of correlated features in regression. Major Lessons In this scenario,...",
+          categories: ["DailyReport"],
+          tags: ["High Dimensional Statistics","Elastic Net"],
+          id: 17
+      })
+      
+    
+      this.add({
+          title: "The Miracle of Fresh Eyes",
+          excerpt: "I’ve been working on an interesting high dimensional statistics problem 1 for which we needed to prove the usual Restricted...",
+          categories: ["DailyReport"],
+          tags: ["Small Ball Methods"],
+          id: 18
+      })
+      
+    
+      this.add({
+          title: "Switching to Trello",
+          excerpt: "I recently gave the Trello another try and was impressed. I’m very interested in productivity apps. Every few month, I...",
+          categories: ["DailyReport"],
+          tags: ["Trello","Online Collaboration","Project Management","To-do List App"],
+          id: 19
       })
       
     
@@ -260,7 +287,7 @@ var store = [
       {
         "title": "Indexing Data Frames in R",
         "url": "http://localhost:4000/dailyreport/r-indexing/",
-        "excerpt": "Major Lessons What is a Data Frame? Compared to intellectual math challenges, technological issues are very mind scratching for me....",
+        "excerpt": "R provides many methods for indexing. Coming from other languages, it takes time to get comfortable with indexing in R....",
         "teaser":
           
             null
@@ -271,7 +298,7 @@ var store = [
       {
         "title": "Merging Data Frames in R by Row Names",
         "url": "http://localhost:4000/dailyreport/r-merge/",
-        "excerpt": "Major Lessons Merge Data Frames I needed to concatenate two data frames which had row names. The regular method is...",
+        "excerpt": "I was trying to read in different features for a cell line, e.g., mutations and expression from separate files and...",
         "teaser":
           
             null
@@ -282,7 +309,18 @@ var store = [
       {
         "title": "Introducing Pandoc",
         "url": "http://localhost:4000/dailyreport/pandoc/",
-        "excerpt": "I was trying to figure out a way to write math heavy blog posts. There are well known JavaScript libraries...",
+        "excerpt": "I was trying to figure out a way to write math heavy blog posts where I found Pandoc. There are...",
+        "teaser":
+          
+            null
+          
+      },
+    
+      
+      {
+        "title": "Setting up KaTex for Jekyll",
+        "url": "http://localhost:4000/dailyreport/KaTex-for-Jekyll/",
+        "excerpt": "KaTex, the fastest library for displaying math on browsers, gradually increased its supported latex functions and is passing its rival...",
         "teaser":
           
             null
@@ -293,7 +331,7 @@ var store = [
       {
         "title": "Indexing with Factors",
         "url": "http://localhost:4000/dailyreport/r-factor-indexing/",
-        "excerpt": "Major Lessons I spent a cycle figuring this out: Any non-numeric thing that you read from a data file is...",
+        "excerpt": "I spent a cycle figuring out, how R treats factors as an index. Major Lessons Any non-numeric thing that you...",
         "teaser":
           
             null
@@ -303,8 +341,8 @@ var store = [
       
       {
         "title": "The Painful Part of Collaboration: Version Control and Shared Storage Spaces",
-        "url": "http://localhost:4000/dailyreport/gitlab-bitbucket-googledrive-Copy/",
-        "excerpt": "Major Lessons\n\n",
+        "url": "http://localhost:4000/dailyreport/gitlab-bitbucket-googledrive/",
+        "excerpt": "Anyone who had online collaboration experience faced this question one way or another: What is a good version control system...",
         "teaser":
           
             null
@@ -315,7 +353,7 @@ var store = [
       {
         "title": "The Curious Case of Ibrutinib-resistant CLL: Does Reverse-Mutations Exist? - Part I",
         "url": "http://localhost:4000/dailyreport/cll-ibrutinib-resistence/",
-        "excerpt": "This came up during our lab meeting today with my great postdoc mentor Professor Kevin Coombes. I asked a dumb...",
+        "excerpt": "The question is, can mutations vanish themselves? We discussed an applied example of CLL treatment with Ibrutinib. The following came...",
         "teaser":
           
             null
@@ -324,20 +362,9 @@ var store = [
     
       
       {
-        "title": "Introducing the Jekyll-Scholar",
+        "title": "Introducing Jekyll-Scholar",
         "url": "http://localhost:4000/dailyreport/jekyll-scholar/",
-        "excerpt": "Major Lessons\n\n",
-        "teaser":
-          
-            null
-          
-      },
-    
-      
-      {
-        "title": "Gender Pay Gap, Why?",
-        "url": "http://localhost:4000/dailyreport/gender-pay-gap-Copy-(2)/",
-        "excerpt": "I’m fortunate to be a postdoc at the MBI instead of a member of a regular lab. Here, there is...",
+        "excerpt": "Jekyll-Scholar is formatting references and citations on Jekyll blogs and “formats your bibliographies and reading lists for the web and...",
         "teaser":
           
             null
@@ -348,7 +375,7 @@ var store = [
       {
         "title": "Gender Pay Gap, Why?",
         "url": "http://localhost:4000/dailyreport/gender-pay-gap/",
-        "excerpt": "I’m fortunate to be a postdoc at the MBI instead of a member of a regular lab. Here, there is...",
+        "excerpt": "A reason for the gender pay gap and how to avoid it came up in our discussions with early career...",
         "teaser":
           
             null
@@ -357,9 +384,42 @@ var store = [
     
       
       {
-        "title": "Gender Pay Gap, Why?",
+        "title": "Staticman vs. Disqus",
+        "url": "http://localhost:4000/dailyreport/staticman-vs-disqus/",
+        "excerpt": "On several rounds of effort, I tried to use Staticman as the comment manager service for this blog. I failed...",
+        "teaser":
+          
+            null
+          
+      },
+    
+      
+      {
+        "title": "Elastic Net: An Intuitive Explanation",
         "url": "http://localhost:4000/dailyreport/elastic-net-intuition/",
-        "excerpt": "I’m fortunate to be a postdoc at the MBI instead of a member of a regular lab. Here, there is...",
+        "excerpt": "Elastic net is a proper tool when we have lots of correlated features in regression. Major Lessons In this scenario,...",
+        "teaser":
+          
+            null
+          
+      },
+    
+      
+      {
+        "title": "The Miracle of Fresh Eyes",
+        "url": "http://localhost:4000/dailyreport/miracle-fresh-eyes/",
+        "excerpt": "I’ve been working on an interesting high dimensional statistics problem 1 for which we needed to prove the usual Restricted...",
+        "teaser":
+          
+            null
+          
+      },
+    
+      
+      {
+        "title": "Switching to Trello",
+        "url": "http://localhost:4000/dailyreport/trello/",
+        "excerpt": "I recently gave the Trello another try and was impressed. I’m very interested in productivity apps. Every few month, I...",
         "teaser":
           
             null

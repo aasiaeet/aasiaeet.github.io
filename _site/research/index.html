@@ -102,6 +102,9 @@
   document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
 </script>
 
+<!-- Load jQuery -->
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!-- Load KaTeX -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0-beta/katex.min.css" integrity="sha384-L/SNYu0HM7XECWBeshTGLluQO9uVI1tvkCtunuoUbCHHoTH76cDyXty69Bb9I0qZ" crossorigin="anonymous">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0-beta/katex.min.js" integrity="sha384-ad+n9lzhJjYgO67lARKETJH6WuQVDDlRfj81AJJSswMyMkXTD49wBj5EP004WOY6" crossorigin="anonymous"></script>
 
@@ -382,6 +385,7 @@
 
 <div class="page__footer-copyright">&copy; 2018 Amir Asiaee T.. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
 
+<!-- AJax for DropDown Effect of Abstract and BibTex -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
@@ -396,10 +400,31 @@ $(document).ready(function(){
 });
 </script>
 
+<!-- New to convert MathJax to KaTex 
+<script type="text/javascript">
+$("script[type='math/tex']").replaceWith(
+  function(){
+    var tex = $(this).text();
+    return "<span class=\"inline-equation\">" + 
+           katex.renderToString(tex) +
+           "</span>";
+});
+
+$("script[type='math/tex; mode=display']").replaceWith(
+  function(){
+    var tex = $(this).text();
+    return "<div class=\"equation\">" + 
+           katex.renderToString("\\displaystyle "+tex) +
+           "</div>";
+});
+</script>
+-->
+
+<!-- Previous for changing MathJax to KaTex -->
 <script>
   $("script[type='math/tex']").replaceWith(function() {
       var tex = $(this).text();
-      return katex.renderToString(tex, {displayMode: false});
+      return katex.renderToString(tex.replace(/%.*/g, ''), {displayMode: false});
   });
 
   $("script[type='math/tex; mode=display']").replaceWith(function() {
@@ -407,6 +432,7 @@ $(document).ready(function(){
       return katex.renderToString(tex.replace(/%.*/g, ''), {displayMode: true});
   });
 </script>
+
       </footer>
     </div>
 
