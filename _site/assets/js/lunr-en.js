@@ -121,20 +121,11 @@ var idx = lunr(function () {
       
     
       this.add({
-          title: "The Painful Part of Collaboration: Version Control and Shared Storage Spaces",
-          excerpt: "Anyone who had online collaboration experience faced this question one way or another: What is a good version control system...",
-          categories: ["DailyReport"],
-          tags: ["GitLab","GitHub","Google Drive","Version Control"],
-          id: 12
-      })
-      
-    
-      this.add({
           title: "The Curious Case of Ibrutinib-resistant CLL: Does Reverse-Mutations Exist? - Part I",
           excerpt: "The question is, can mutations vanish themselves? We discussed an applied example of CLL treatment with Ibrutinib. The following came...",
           categories: ["DailyReport"],
           tags: ["CLL","Cancer","Ibrutinib","Drug Resistance"],
-          id: 13
+          id: 12
       })
       
     
@@ -143,7 +134,7 @@ var idx = lunr(function () {
           excerpt: "Jekyll-Scholar is formatting references and citations on Jekyll blogs and “formats your bibliographies and reading lists for the web and...",
           categories: ["DailyReport"],
           tags: ["Jekyll","Plugin"],
-          id: 14
+          id: 13
       })
       
     
@@ -152,7 +143,7 @@ var idx = lunr(function () {
           excerpt: "A reason for the gender pay gap and how to avoid it came up in our discussions with early career...",
           categories: ["DailyReport"],
           tags: ["Professional Development","Jordan B. Peterson"],
-          id: 15
+          id: 14
       })
       
     
@@ -161,7 +152,7 @@ var idx = lunr(function () {
           excerpt: "On several rounds of effort, I tried to use Staticman as the comment manager service for this blog. I failed...",
           categories: ["DailyReport"],
           tags: ["Staticman","Disqus","Jekyll"],
-          id: 16
+          id: 15
       })
       
     
@@ -170,7 +161,7 @@ var idx = lunr(function () {
           excerpt: "Elastic net is a proper tool when we have lots of correlated features in regression. Major Lessons In this scenario,...",
           categories: ["DailyReport"],
           tags: ["High Dimensional Statistics","Elastic Net"],
-          id: 17
+          id: 16
       })
       
     
@@ -179,7 +170,7 @@ var idx = lunr(function () {
           excerpt: "I’ve been working on an interesting high dimensional statistics problem 1 for which we needed to prove the usual Restricted...",
           categories: ["DailyReport"],
           tags: ["Small Ball Methods"],
-          id: 18
+          id: 17
       })
       
     
@@ -188,7 +179,7 @@ var idx = lunr(function () {
           excerpt: "I recently gave the Trello another try and was impressed. I’m very interested in productivity apps. Every few month, I...",
           categories: ["DailyReport"],
           tags: ["Trello","Online Collaboration","Project Management","To-do List App"],
-          id: 19
+          id: 18
       })
       
     
@@ -332,17 +323,6 @@ var store = [
         "title": "Indexing with Factors",
         "url": "http://localhost:4000/dailyreport/r-factor-indexing/",
         "excerpt": "I spent a cycle figuring out, how R treats factors as an index. Major Lessons Any non-numeric thing that you...",
-        "teaser":
-          
-            null
-          
-      },
-    
-      
-      {
-        "title": "The Painful Part of Collaboration: Version Control and Shared Storage Spaces",
-        "url": "http://localhost:4000/dailyreport/gitlab-bitbucket-googledrive/",
-        "excerpt": "Anyone who had online collaboration experience faced this question one way or another: What is a good version control system...",
         "teaser":
           
             null

@@ -2,6 +2,20 @@
 layout: single 
 permalink: /research/
 author_profile: true
-title: Blogging Like a Hacker
+title: Research Projects
 ---
+Here is the list of projects which I am/was involved and the relevant questions of each.  
 
+## Cancer Study 
+- Given a snapshot of a cancer tumor, can we build the order in which mutations accumulated? 
+- What is a relation between genes, pathways, and hallmark of cancer? 
+- Given a set of drugs and the genetic makeup of a patient, can we exploit cancer subtype to suggest a more promising treatment?
+
+## High Dimensional Statistics 
+- Having a meaningful grouping of samples, can we make a better prediction in high dimensional regime?
+- How can we handle measurement errors in high dimensional regime?
+
+## Social Network Analysis
+- Who is the most influential person in a social network of customers when they can change their loyalties?
+- Given crowd-sourced noisy labels of tweets, can we learn to classify sentiments of a tweet?
+- Assume we can modify social ties. What are the best links to add to a social network to increase the impact of a viral marketing campaign? 

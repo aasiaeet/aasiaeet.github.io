@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-01-28T21:26:29-05:00</updated><id>http://localhost:4000/</id><title type="html">Amir Asiaee</title><subtitle>Personal website and blog. </subtitle><author><name>Amir Asiaee</name><email>asiaeetaheri.1@osu.edu</email></author><entry><title type="html">Switching to Trello</title><link href="http://localhost:4000/dailyreport/trello/" rel="alternate" type="text/html" title="Switching to Trello" /><published>2018-01-26T00:00:00-05:00</published><updated>2018-01-26T00:00:00-05:00</updated><id>http://localhost:4000/dailyreport/trello</id><content type="html" xml:base="http://localhost:4000/dailyreport/trello/">&lt;p&gt;I recently gave the Trello another try and was impressed.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-02-04T21:33:07-05:00</updated><id>http://localhost:4000/</id><title type="html">Amir Asiaee</title><subtitle>Personal website and blog. </subtitle><author><name>Amir Asiaee</name><email>asiaeetaheri.1@osu.edu</email></author><entry><title type="html">Switching to Trello</title><link href="http://localhost:4000/dailyreport/trello/" rel="alternate" type="text/html" title="Switching to Trello" /><published>2018-01-26T00:00:00-05:00</published><updated>2018-01-26T00:00:00-05:00</updated><id>http://localhost:4000/dailyreport/trello</id><content type="html" xml:base="http://localhost:4000/dailyreport/trello/">&lt;p&gt;I recently gave the Trello another try and was impressed.&lt;/p&gt;
 
 &lt;p&gt;I’m very interested in productivity apps. Every few month, I look around for new trending ones and give them a try for a while most of them fail to impress me, but some find their place in my pipeline.&lt;/p&gt;
 
@@ -246,62 +246,7 @@ So &lt;code class=&quot;highlighter-rouge&quot;&gt;pubName.pdf&lt;/code&gt; corr
       &lt;p&gt;In 2013 Ibrutinib was introduced as a &lt;a href=&quot;http://www.nejm.org/doi/full/10.1056/NEJMoa1215637&quot;&gt;targeted treatment&lt;/a&gt; for relapsed/re-factored CLL patients harboring mutations in TP53 or deletion of 17p. &lt;a href=&quot;http://www.nejm.org/doi/full/10.1056/NEJMoa1509388&quot;&gt;Two years later&lt;/a&gt;, it was suggested as an effective first line of attack for CLL. But as Kevin mentioned, I didn’t check, the relapse (and/or drug resistant) rate after treatment is high when the patients pass the two years milestones, and ironically both studied followed up patients for about two years and missed this major issue. &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Amir Asiaee</name><email>asiaeetaheri.1@osu.edu</email></author><category term="CLL" /><category term="Cancer" /><category term="Ibrutinib" /><category term="Drug Resistance" /><summary type="html">The question is, can mutations vanish themselves? We discussed an applied example of CLL treatment with Ibrutinib.</summary></entry><entry><title type="html">The Painful Part of Collaboration: Version Control and Shared Storage Spaces</title><link href="http://localhost:4000/dailyreport/gitlab-bitbucket-googledrive/" rel="alternate" type="text/html" title="The Painful Part of Collaboration: Version Control and Shared Storage Spaces" /><published>2018-01-16T00:00:00-05:00</published><updated>2018-01-16T00:00:00-05:00</updated><id>http://localhost:4000/dailyreport/gitlab-bitbucket-googledrive</id><content type="html" xml:base="http://localhost:4000/dailyreport/gitlab-bitbucket-googledrive/">&lt;p&gt;Anyone who had online collaboration experience faced this question one way or another: What is a good version control system for code and manuscripts? Where should we store static data?&lt;/p&gt;
-
-&lt;h1 id=&quot;major-lessons&quot;&gt;Major Lessons&lt;/h1&gt;
-&lt;p&gt;Of course, a version control system is a must-have for an online collaborative project. Putting aside the more classic Sub-version, Git and Mercurial are among the most used version control &lt;strong&gt;softwares&lt;/strong&gt;. Git is supported by GitHub, GitLab, and Bitbucket web interfaces while Mercurial is mostly supported by Bitbucket.&lt;/p&gt;
-
-&lt;p&gt;Then the collaboration problem reduces to selecting one of these, right? No! &lt;br /&gt;
-Different groups and companies have different preferences, and if you collaborate on the same project with more than one group, there will be a problem.&lt;/p&gt;
-
-&lt;h2 id=&quot;case-study&quot;&gt;Case Study&lt;/h2&gt;
-&lt;p&gt;In our lab ant &lt;a href=&quot;http://cs.umn.edu/&quot;&gt;UMN&lt;/a&gt; we were using Mercurial/Bitbucket, and here at BMI&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; because we are using private (patient) data, we work with an internal version of the GitLab.&lt;br /&gt;
-Now, I want to have a joint project with my thesis advisor and my postdoc mentor. What is a good setup?&lt;/p&gt;
-
-&lt;p&gt;I’m fortunate because the software that each group uses is different (Mercurial vs. Git). So the hidden &lt;code class=&quot;highlighter-rouge&quot;&gt;.git&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;.hg&lt;/code&gt; is considered as a directory in your repository, which you can tell the version control software even to ignore updating. But, I still don’t know how to do this if both parties use, say, Git.&lt;/p&gt;
-
-&lt;h2 id=&quot;hierarchical-folder-structure-and-reproducibility&quot;&gt;Hierarchical Folder Structure and Reproducibility&lt;/h2&gt;
-&lt;p&gt;We are using a folder structure proposed for computational biology projects in &lt;a href=&quot;http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000424&quot;&gt;a paper&lt;/a&gt; in PLOS Computational Biology.&lt;/p&gt;
-
-&lt;p&gt;The goal is to keep a clean project folder with as many instruction file and documentation as possible to enable the future researcher to exactly replicate your claim. Roughly speaking, we have a directory for each of code, documentation(paper draft and relevant literature), data(raw and clean), and results (figure, raw experiment outcomes) each of them accompanied with a detail &lt;code class=&quot;highlighter-rouge&quot;&gt;README.md&lt;/code&gt; file.&lt;/p&gt;
-
-&lt;h2 id=&quot;data-files&quot;&gt;Data Files&lt;/h2&gt;
-&lt;p&gt;Another critical issue is the strategy of handling the static files. In any data science project, there are static (input) files. Of course, you do some preprocessing or cleaning, but after that, you usually do not change those files. So, it doesn’t make sense to put those in the repository. They eat up your space, and when you want to commit the software should check all of those for changes (use git or hg ignore for this!). Also, every participant may need to keep large files in different places, e.g., external hard drives.&lt;/p&gt;
-
-&lt;p&gt;We are still playing with a standard way of handling this problem. The current approach is as follows:&lt;br /&gt;
-Almost every reasonable operating system has an environment variable &lt;code class=&quot;highlighter-rouge&quot;&gt;$HOME&lt;/code&gt;. &lt;br /&gt;
-One can store a &lt;code class=&quot;highlighter-rouge&quot;&gt;.json&lt;/code&gt; file containing the user defined path to the data folder in the following address:&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$HOME/paths/[projectName].json
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;And the &lt;code class=&quot;highlighter-rouge&quot;&gt;[projectName].json&lt;/code&gt; file will look like:&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;{
-    &quot;path&quot; : {C:\Users\amira\google drive\[projectName]\data}
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;Instead of saving files in &lt;code class=&quot;highlighter-rouge&quot;&gt;data&lt;/code&gt; folder and pushing all of the clean and raw files in the repository, here only &lt;code class=&quot;highlighter-rouge&quot;&gt;[projectName].json&lt;/code&gt; will be in the repo. And when you set it once to your local data directory, you should put it in &lt;code class=&quot;highlighter-rouge&quot;&gt;.gitignore&lt;/code&gt; list because no one else would need to know where you store your files.&lt;/p&gt;
-
-&lt;h2 id=&quot;including-google-drive&quot;&gt;Including Google Drive&lt;/h2&gt;
-&lt;p&gt;I prefer to have another backup on cloud for ease of use and possible incidents &lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;.&lt;br /&gt;
-I have unlimited Drive storage. Google recently changed the name to Backup and Sync and supports instant both way sync.&lt;/p&gt;
-
-&lt;p&gt;Through trial and error, I’ve come up with the following steps, which prevents Drive’s always syncing feature from ruining your day:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Quit/Pause Drive and work on your project.&lt;/li&gt;
-  &lt;li&gt;Commit, and push to a remote repository.&lt;/li&gt;
-  &lt;li&gt;Open the Drive and let it sync.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:1&quot;&gt;
-      &lt;p&gt;I’m at &lt;a href=&quot;https://mbi.osu.edu/&quot;&gt;MBI&lt;/a&gt;, my mentor is at &lt;a href=&quot;http://bmi.osu.edu/&quot;&gt;BMI&lt;/a&gt; department! &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:2&quot;&gt;
-      &lt;p&gt;You think you can trust version control web interfaces? You are wrong! Read more about &lt;a href=&quot;https://about.gitlab.com/2017/02/01/gitlab-dot-com-database-incident/&quot;&gt;GitLab.com database incident&lt;/a&gt;. &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Amir Asiaee</name><email>asiaeetaheri.1@osu.edu</email></author><category term="GitLab" /><category term="GitHub" /><category term="Google Drive" /><category term="Version Control" /><summary type="html">Anyone who had online collaboration experience faced this question one way or another: What is a good version control system for code and manuscripts? Where should we store static data?</summary></entry><entry><title type="html">Indexing with Factors</title><link href="http://localhost:4000/dailyreport/r-factor-indexing/" rel="alternate" type="text/html" title="Indexing with Factors" /><published>2018-01-15T00:00:00-05:00</published><updated>2018-01-15T00:00:00-05:00</updated><id>http://localhost:4000/dailyreport/r-factor-indexing</id><content type="html" xml:base="http://localhost:4000/dailyreport/r-factor-indexing/">&lt;p&gt;I spent a cycle figuring out, how R treats factors as an index.&lt;/p&gt;
+&lt;/div&gt;</content><author><name>Amir Asiaee</name><email>asiaeetaheri.1@osu.edu</email></author><category term="CLL" /><category term="Cancer" /><category term="Ibrutinib" /><category term="Drug Resistance" /><summary type="html">The question is, can mutations vanish themselves? We discussed an applied example of CLL treatment with Ibrutinib.</summary></entry><entry><title type="html">Indexing with Factors</title><link href="http://localhost:4000/dailyreport/r-factor-indexing/" rel="alternate" type="text/html" title="Indexing with Factors" /><published>2018-01-15T00:00:00-05:00</published><updated>2018-01-15T00:00:00-05:00</updated><id>http://localhost:4000/dailyreport/r-factor-indexing</id><content type="html" xml:base="http://localhost:4000/dailyreport/r-factor-indexing/">&lt;p&gt;I spent a cycle figuring out, how R treats factors as an index.&lt;/p&gt;
 
 &lt;h1 id=&quot;major-lessons&quot;&gt;Major Lessons&lt;/h1&gt;
 
@@ -363,4 +308,21 @@ You either should read the column as string:&lt;/p&gt;
       &lt;p&gt;I’m not sure how Pandoc handles images, and I don’t want to leave it to Pandoc to decide those formatting decisions when I have a theme and customized CSS style for each element. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Amir Asiaee</name><email>asiaeetaheri.1@osu.edu</email></author><category term="KaTex" /><category term="Jekyll" /><category term="MathJax" /><category term="Pandoc" /><summary type="html">KaTex, the fastest library for displaying math on browsers, gradually increased its supported latex functions and is passing its rival MathJax.</summary></entry></feed>
+&lt;/div&gt;</content><author><name>Amir Asiaee</name><email>asiaeetaheri.1@osu.edu</email></author><category term="KaTex" /><category term="Jekyll" /><category term="MathJax" /><category term="Pandoc" /><summary type="html">KaTex, the fastest library for displaying math on browsers, gradually increased its supported latex functions and is passing its rival MathJax.</summary></entry><entry><title type="html">Introducing Pandoc</title><link href="http://localhost:4000/dailyreport/pandoc/" rel="alternate" type="text/html" title="Introducing Pandoc" /><published>2018-01-12T00:00:00-05:00</published><updated>2018-01-12T00:00:00-05:00</updated><id>http://localhost:4000/dailyreport/pandoc</id><content type="html" xml:base="http://localhost:4000/dailyreport/pandoc/">&lt;p&gt;I was trying to figure out a way to write math heavy blog posts where I found Pandoc.&lt;/p&gt;
+
+&lt;p&gt;There are well-known JavaScript libraries like MathJax and KaTex for this purpose, and you just need to through in a CDN provider’s URL in a script tag and start using the special characters like double $.&lt;/p&gt;
+
+&lt;p&gt;I had two problems:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;I wanted to use &lt;a href=&quot;&quot;&gt;KaTex&lt;/a&gt; which is much faster than MathJax.&lt;/li&gt;
+  &lt;li&gt;I wanted to be able to use my latex macro file (gradually populated during my Ph.D.) to write math-heavy blogs faster.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;major-lessons&quot;&gt;Major Lessons&lt;/h1&gt;
+&lt;p&gt;Resolving the first issue needs another post. &lt;br /&gt;
+For achieving the second goal, I couldn’t find MarkDown based solution, and the only way around that I found is due to steps of this &lt;a href=&quot;http://shuvomoy.github.io/blog/non-technical/2016/01/16/Writing-math-heavy-blogs.html&quot;&gt;post&lt;/a&gt; which uses Pandoc to convert latex (with macros) to HTML files directly.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://pandoc.org/&quot;&gt;Pandoc&lt;/a&gt; seems to be a great tool with reliable performance in converting between any document types. The plan is to use it to convert between MarkDown and Beamer for my future presentation. It would be fun to have a web-friendly version of presentation along with the PDF version.&lt;/p&gt;
+
+&lt;h1 id=&quot;minor-lessons&quot;&gt;Minor Lessons&lt;/h1&gt;
+&lt;p&gt;I tried to use it for generating content of README.md files of a project on GitLab, but unfortunately, it didn’t work. The problem is with the non-standard MarkDown that GitLab uses known as GitLab Flavored MarkDown (GFM). Pandoc does not support GitLab GFM and ironically reserved the &lt;code class=&quot;highlighter-rouge&quot;&gt;--gfm&lt;/code&gt; option to convert to &lt;strong&gt;GitHub&lt;/strong&gt; flavored MarkDown! Someday, someone should standardize the heap of MarkDown languages for a greater good!&lt;/p&gt;</content><author><name>Amir Asiaee</name><email>asiaeetaheri.1@osu.edu</email></author><category term="Pandoc" /><category term="MarkDown" /><category term="KaTex" /><summary type="html">I was trying to figure out a way to write math heavy blog posts where I found Pandoc.</summary></entry></feed>
