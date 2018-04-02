@@ -1,0 +1,97 @@
+\documentclass[]{article}
+
+
+
+
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage{makecell}
+\usepackage{url}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{array}
+\usepackage{times,color}
+\usepackage[rflt]{floatflt}
+\usepackage{epsfig,times,graphicx}
+\usepackage{amsmath,amssymb,amsopn,algorithm,algorithmic,theorem,float,bbm,bm,enumerate,color,multirow}
+\usepackage{rotating}
+\usepackage{array}
+%\usepackage{slashbox}
+\usepackage{makecell}
+\usepackage{multirow}
+\usepackage{hhline}
+\usepackage{xspace}
+\usepackage{mathtools}
+\usepackage{bm}
+
+\input{notation}
+
+
+\title{Projection onto Elastic Net Ball}
+
+\begin{document}
+	
+How can we project to an arbitrary norm ball? 
+
+\section{Major Lessons}
+I think the general way of doing this is to go for proximal operators. Proximal operator of a closed proper convex function $f(\cdot)$ is defined as: 
+\beq 
+\prox_f (\v) = \argmin_\x \frac{1}{2} \norm{\v - \x}{2}^2 + f(\x) 
+\eeq 
+Note that the objective of the above optimization is strongly convex, so there is a unique minimizer for it. 
+
+\subsection{Generalizing Projection}
+Proximal operator is a generalization of projection in the following sense. Remember the indicator of a set $\cS$, i.e.,
+\beq 
+\indic_\cS(\x) = 
+\begin{cases}
+	0& \x \in \cS \\
+	\infty& \x \notin \cS \\ 
+\end{cases}
+\eeq 
+Then the proximal operator reduces to Euclidian projection:
+\beq 
+\prox_f (\v) = \argmin_{\x\in \cS} \frac{1}{2} \norm{\v - \x}{2}^2 = \Pi_\cS(\v) 
+\eeq 
+\subsection{Generalizing Orthogonal Decomposition}
+Let $\cS$ and $\cS^\perp$ be two orthogonal subspaces. Then for any vector $\v$ we have:
+\beq 
+\v = \Pi_{\cS}(\v) + \Pi_{\cS^\perp}(\v)  
+\eeq 
+We have the same decomposition for closed proper convex $f$ and its convex conjugate $f^*(\y) = \argmin_\x \x^T\y - f(\x)$:
+\beq 
+\v = \prox_f (\v) + \prox_{f^*} (\v)
+\eeq 
+The above result is known as {\bf Moreau Decomposition}. 
+
+{\bf Proof:}
+For the $\u = \prox_f (\v)$, from the optimality condition we should have:
+\beq 
+\v - \u \in \partial f(\u) \iff \u \in \partial f^*(\v - \u ) \iff (\v - \u) = \prox_{f^*}(\u)
+\eeq 
+
+Above, we used a useful property which relates subgradient of $f$ and $f^*$:
+\beq 
+\u \in \partial f(\v) \iff \v \in \partial f^*(\u) \iff f^*(\u) + f(\v) = \u^T \v 
+\eeq 
+
+\subsection{Moreau Decomposotion for a Norm}
+Here we first need to following for an arbitrary norm $f(\x) = \norm{\x}{}$:
+\beq 
+f^*(\y) = \indic_{\norm{\cdot}{*} \leq 1}(\y)
+\eeq 
+where $\norm{\cdot}{*}$ is the daul norm. In other words, the convex conjugate of a norm is the indicator function of its dual norm. 
+
+From the above equality and the Moreau decomposition we get: 
+\be 
+\v 
+&= \prox_{\norm{\cdot}{}} + \prox_{\indic_{\norm{\cdot}{*} \leq 1}(\cdot)} 
+\\ 
+&= \prox_{\norm{\cdot}{}} + \Pi_{\indic_{\norm{\cdot}{*} \leq 1}} (\v)
+\ee 
+Above equality gives us a way to switch between proximal operator $\prox$ and projection $\Pi$.
+
+
+
+
+\end{document}

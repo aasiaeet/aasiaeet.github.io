@@ -1,0 +1,141 @@
+\documentclass[]{article}
+
+
+
+
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage{makecell}
+\usepackage{url}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{array}
+\usepackage{times,color}
+\usepackage[rflt]{floatflt}
+\usepackage{epsfig,times,graphicx}
+\usepackage{amsmath,amssymb,amsopn,algorithm,algorithmic,theorem,float,bbm,bm,enumerate,color,multirow}
+\usepackage{rotating}
+\usepackage{array}
+%\usepackage{slashbox}
+\usepackage{makecell}
+\usepackage{multirow}
+\usepackage{hhline}
+\usepackage{xspace}
+\usepackage{mathtools}
+\usepackage{bm}
+
+\input{notation}
+
+
+\title{Projection onto Elastic Net Ball}
+
+\begin{document}
+	
+How can we project to the Elastic Net ball? 
+
+\section{Major Lessons}
+In the last post we saw that Moreau decomposition may give us a way on projecting onto norm balls. But the problem is that the elastic net is not a norm (why?). So to project on it we need another method. 
+
+The way that John Duchi projects onto $l_1$-norm ball may be a good line of attack. Here are the steps that he uses to give a good algorithm for this:
+
+\subsection{Projecting onto $l_1$-norm Ball}
+\begin{itemize}
+	\item 
+\end{itemize}
+
+
+\subsubsection{Projecting onto a Simplex}
+
+\subsubsection{Why it Works}
+
+\subsection{Projecting onto Elastic Net Ball}
+Here is the projection problem:
+
+\be
+\w = \argmin_{\y} \frac{1}{2} \norm{\v - \y}{2}^2, \quad \norm{\y}{1} + \frac{1}{2} \norm{\y}{2}^2 \leq b.
+\ee 
+Like before, from the symmetry of the elastic net ball, we can consider the following problem and compute the solution of the original problem from $w_i = \sgn(v_i) u_i$:
+\be 
+\u = \argmin_{\x} \frac{1}{2} \norm{|\v| - \x}{2}^2, \quad \norm{\x}{1} + \frac{1}{2} \norm{\x}{2}^2 \leq b, \x \succeq 0 
+\ee 
+where $(|\v|)_i = |v_i|$.
+Writing the Lagrangian: 
+\be 
+\cL = \frac{1}{2} \norm{|\v| - \x}{2}^2 + \alpha (\x^T \one + \frac{1}{2} \norm{\x}{2}^2 - b) + \bbeta^T \x  
+\ee 
+Taking derivative w.r.t. $x_i$ and setting it to zero:
+\be 
+u_i  = \frac{|v_i| - \alpha - \beta_i}{1 + \alpha}
+\ee 
+If $u_i >  0$ complementary slackness tells us that $\beta_i = 0$, so:
+\be 
+u_i  = \frac{|v_i| - \alpha}{1 + \alpha}
+\ee 
+Assume that we know the number of non-zero elements of the optimal solution $\u$ to be $\rho$. Therefore $\forall i \in [\rho]: |v_{(i)}| > \alpha$
+Then we can write the feasibility of $\u$ as:
+\be 
+b 
+&= \sum_{i=1}^{\rho} u_i + \frac{1}{2} \sum_{i=1}^{\rho} u_i^2 
+\\ 
+&= \frac{1}{1 + \alpha} \sum_{i=1}^{\rho} (|v_i| - \alpha) + \frac{1}{2(1 + \alpha)} (|v_i| - \alpha)^2
+\\
+&= \frac{1}{2(1 + \alpha)^2} \sum_{i=1}^{\rho} (2|v_i| + 2\alpha |v_i| - 2 \alpha - 2 \alpha^2) + (|v_i|^2 + \alpha^2 - 2 \alpha |v_i|)
+\\
+&= \frac{1}{2(1 + \alpha)^2} \sum_{i=1}^{\rho} \left[|v_i|^2  + 2|v_i| + 1 -  (\alpha^2 + 2 \alpha + 1) \right]
+\\
+&= \frac{1}{2(1 + \alpha)^2} \sum_{i=1}^{\rho} (|v_i| + 1)^2 -  \frac{\rho}{2}
+\ee 
+Assuming $\rho$ is known, we get the following for the $\alpha$:
+\be 
+\alpha = \sqrt{\frac{1}{2b + \rho} \sum_{i=1}^{\rho} (|v_i| + 1)^2} - 1
+\ee 
+Now, we claim that $\rho$ is the following:
+\be 
+\rho = \max \left\{j \in [p]: v_{(j)} - \frac{1}{j} \left(\sum_{i=1}^{j} \left[v_{(i)} + \frac{v^2_{(i)}}{2}\right] - b \right) > 0 \right\}
+\ee 
+
+Let's assume that we are wrong. Then the correct number of non-zero elements of the actual solution $\u^*$ is $\rho^*$ with the corresponding Lagrange multiplier $\alpha^*$. We know that still we have the following:
+\be 
+\forall i \leq \rho^*: u^*_{(i)} = \frac{|v_{(i)}| - \alpha^*}{1 + \alpha^*} > 0, \quad \alpha^* = \sqrt{\frac{1}{2b + \rho^*} \sum_{i=1}^{\rho^*} (|v_{(i)}| + 1)^2} - 1
+\ee 
+First consider the case of $\rho < \rho^*$. Note that in such a case, $\alpha^* < \alpha$. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
