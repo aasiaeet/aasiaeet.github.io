@@ -5,7 +5,7 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # `jekyll serve`. If you change this file, please restart the server process.
 
-minimal_mistakes_skin    : "dark" #"default"  #"air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : contrast #"dark" #"default"  #"air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 ##"https://aasiaeet.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 #"aasiaeet/aasiaeet"# GitHub username/repo-name .g. "mmistakes/minimal-mistakes"
 
@@ -70,7 +70,7 @@ analytics:
 author:
   name             : "Amir Asiaee"
   avatar           : "/assets/images/shot.jpg"
-  bio              : "Machine learning researcher dabbling in caner study."
+  bio              : "Machine learning researcher dabbling in cancer study."
   location         : #"MBI, Ohio State University"
   email            : asiaeetaheri.1@osu.edu
   uri              :
