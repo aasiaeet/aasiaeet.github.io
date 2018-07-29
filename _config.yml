@@ -5,7 +5,7 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # `jekyll serve`. If you change this file, please restart the server process.
 
-minimal_mistakes_skin    : contrast #"dark" #"default"  #"air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : default #"dark" #"default"  #"air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 ##"https://aasiaeet.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 #"aasiaeet/aasiaeet"# GitHub username/repo-name .g. "mmistakes/minimal-mistakes"
 
@@ -15,7 +15,7 @@ title                    : "Amir Asiaee"
 title_separator          : "-"
 name                     : "Amir Asiaee T."
 description              : "Personal website and blog. "
-url                      : "https://aasiaeet.netlify.com" 
+url                      : "https://www.amirasiaee.com/" #"https://aasiaeet.netlify.com" 
 repository               : #"aasiaeet/aasiaeet.github.io" 
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
