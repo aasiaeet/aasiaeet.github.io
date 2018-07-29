@@ -13,7 +13,7 @@ minimal_mistakes_skin    : default #"dark" #"default"  #"air", "aqua", "contrast
 locale                   : "en"
 title                    : "Amir Asiaee"
 title_separator          : "-"
-name                     : "Amir Asiaee T."
+name                     : "Amir Asiaee"
 description              : "Personal website and blog. "
 url                      : "https://www.amirasiaee.com"  #"https://aasiaeet.netlify.com" 
 repository               : #"aasiaeet/aasiaeet.github.io" 
@@ -46,7 +46,7 @@ naver_site_verification  :
 
 # Social Sharing
 twitter:
-  username               :
+  username               : "aasiaeet"
 facebook:
   username               :
   app_id                 :
