@@ -13,3 +13,5 @@ I obtained my master's degree (MSc) in Artificial Intelligence from [University 
 It was my honor to study at the [Alavi Institute](https://en.wikipedia.org/wiki/Alavi_Institute) during my high school years where I was blessed with great teachers and friends. 
 
 I was a competitive swimmer in middle and high school and became a member of Tehran's swimming and water polo teams. I was playing right wing in the [mushroom formation](https://en.wikipedia.org/wiki/Water_polo#Common_techniques_and_practices). Later on, I became a member of University of Tehran's swimming team. 
+
+<a href="/cv-Amir Asiaee-Taheri.pdf"><button type="button" class="btn" style="outline:none">My CV </button></a> 
