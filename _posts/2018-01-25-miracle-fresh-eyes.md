@@ -16,9 +16,8 @@ There are a few methods for showing the RE condition among which [Mendelson's sm
 
 I just wanted to mention that after stalling over the problem for a while I completely stopped thinking about it and worked on other things for a few weeks and when I re-examined it today (after some context switch warm up) I looked through the problem and quickly saw the answer!
 
-The main point that I want to share with other knowledge-workers out there is that living with a problem seems desirable and one feels that he makes progress by continually thinking and pursuing a solution but unfortunately, this is not true in many situations for abstract problems. You need to relax or switch to another task for a while and let your  __diffuse mode__^[3] take over and find a solution in the back of your mind. Then when you come back to the tough problem, you can see with the fresh eyes and hopefully come up with a novel line of attack. 
+The main point that I want to share with other knowledge-workers out there is that living with a problem seems desirable and one feels that he makes progress by continually thinking and pursuing a solution but unfortunately, this is not true in many situations for abstract problems. You need to relax or switch to another task for a while and let your  __diffuse mode^[3]__ take over and find a solution in the back of your mind. Then when you come back to the tough problem, you can see with the fresh eyes and hopefully come up with a novel line of attack. 
 
 [^3]: As Barbara Oakley named it in [LHTL](https://www.coursera.org/learn/learning-how-to-learn).
 [^2]: We hope to have an upper bound as a decreasing function of the number of samples $$n$$.
-
 [^1]: The paper is almost done, I'll advertise it after polishing it and uploading it on the arXiv. 
