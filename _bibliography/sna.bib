@@ -1,9 +1,10 @@
 @inproceedings{gabz15,
   title={Revisiting Non-Progressive Influence Models: Scalable Influence Maximization in Social Networks.},
-  author={Golnari*, Golshan and {\textbf{Asiaee T.*}}, {\textbf{Amir}} and Banerjee, Arindam and Zhang, Zhi-Li},
+  author={Golnari*, Golshan and Asiaee T.*, Amir and Banerjee, Arindam and Zhang, Zhi-Li},
   booktitle={31st Conference on Uncertainty in Artificial Intelligence (UAI)},
   pages={316--325},
-  year={2015 \textnormal{(*Equal contribution)},
+  year={2015},
+  note = {(*Equal contribution)},
   abstract={Influence maximization in social networks has been studied extensively in computer science community for the last decade. However, almost all of the efforts have been focused on the \emph{progressive} influence models, such as independent cascade (IC) and Linear threshold (LT) models, which cannot capture the \textit{reversibility of choices}. In this paper, we present the Heat Conduction (HC) model which is a \textit{non-progressive influence model} and has favorable real-world interpretations. Moreover, we show that HC unifies, generalizes, and extends the existing non-progressive models, such as the Voter model \cite{even-dar_note_2007} and non-progressive LT \cite{kempe_maximizing_2003}. We  then prove that selecting the optimal seed set of influential nodes is NP-hard for HC but by establishing the submodularity of influence spread, we can tackle the influence maximization problem with a scalable and provably near-optimal greedy algorithm. To  the  best  of  our  knowledge, we  are  the  first  to present a scalable solution for influence maximization under non-progressive LT model, as a special case of HC model. In sharp contrast to the other greedy influence maximization methods, our fast and efficient \textsc{C2Greedy} algorithm benefits from two analytically computable steps: \emph{closed-form} computation for finding the influence spread as well as the greedy seed selection. Through extensive experiments on several and large real and synthetic networks, we show that \textsc{C2Greedy} outperforms the state-of-the-art methods, under HC model, in terms of both influence spread and scalability. } 
 }
 
