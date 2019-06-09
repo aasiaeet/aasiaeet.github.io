@@ -4,7 +4,7 @@ permalink: /bio/
 author_profile: true
 title: Extended Bio
 ---
-I am a postdoctoral fellow  at the [Mathematical Biosciences Institute](https://mbi.osu.edu/) and the [Department of Biomedical Informatics](https://medicine.osu.edu/bmi/Pages/index.aspx) at the [Ohio State University](https://www.osu.edu/) working with Professor [Kevin Coombes](https://medicine.osu.edu/bmi/people/kevin_coombes/pages/index.aspx). I completed my PhD in [computer science](cs.umn.edu) at the [University of Minnesota](www.umn.edu) in 2017. 
+I am a postdoctoral fellow  at the [Mathematical Biosciences Institute](https://mbi.osu.edu/) and the [Department of Biomedical Informatics](https://medicine.osu.edu/bmi/Pages/index.aspx) at the [Ohio State University](https://www.osu.edu/) working with Professor [Kevin Coombes](https://medicine.osu.edu/bmi/people/kevin_coombes/pages/index.aspx). I completed my PhD in [Computer Science](cs.umn.edu) at the [University of Minnesota](www.umn.edu) in 2017. 
 
 My research interests are machine learning, computational biology, and bioinformatics. Currently, I am applying machine learning techniques to cancer data. At the UMN, I worked on high dimensional statistics and social network analysis under the supervision of Professor [Arindam Banerjee](www-users.cs.umn.edu/~banerjee/). 
 
