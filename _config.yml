@@ -201,7 +201,7 @@ scholar:
 
   source: ./_bibliography
   bibliography: papers.bib
-  bibliography_template: "{{reference | replace_first: 'Asiaee, A.', '<b>Asiaee, A.</b>' | replace_first: 'Asiaee*, A.', '<b>Asiaee*, A.</b> | replace_first: 'Asiaee Taheri, A.', '<b>Asiaee Taheri, A.</b>', | replace_first: 'Asiaee T., A.', '<b>Asiaee T., A.</b>' | replace_first: 'Asiaee T.*, A.', '<b>Asiaee T.*, A.</b>'}}"
+  bibliography_template: "{{reference | replace_first: 'Asiaee, A.', '<b>Asiaee, A.</b>' | replace_first: 'Asiaee*, A.', '<b>Asiaee*, A.</b>' | replace_first: 'Asiaee Taheri, A.', '<b>Asiaee Taheri, A.</b>', | replace_first: 'Asiaee T., A.', '<b>Asiaee T., A.</b>' | replace_first: 'Asiaee T.*, A.', '<b>Asiaee T.*, A.</b>'}}"
 
   replace_strings: true
   join_strings:    true
