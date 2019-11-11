@@ -1,35 +1,29 @@
 @article{ajgs20,
   title={Personalized Transcriptomics: Selecting Drugs Based on Gene Expression Profiles},
-  author={Abrams, Zachary B. and Joglekar, Anoushka and Gershkowitz, Gregory R. and Sinicropiyao, Sara and {\textbf{Asiaee}}, {\textbf{Amir}} and Carbone, David P. and Coombes, Kevin R.}, 
-  year={\textnormal{Under review}} 
+  author={Abrams, Zachary B. and Joglekar, Anoushka and Gershkowitz, Gregory R. and Sinicropiyao, Sara and Asiaee, Amir and Carbone, David P. and Coombes, Kevin R.}, 
+  journal ="Under review" 
 }
 
-@article{ndcc20,
-  title={Disjunctive Bayesian Network Infers Cancer Progression},
-  author={Nicol, Phillip B. and Deaver, Courtney and Chkrebtii, Oksana and Coombes, Kevin R. and Paul, Subhadeep and {\textbf{Asiaee}}, {\textbf{Amir}}}
-}
-
-@article{ancd20,
-  title={Inferring Progression Trajectory of Melanoma},
-  author={{\textbf{Asiaee}}, {\textbf{Amir}} and Nicol, Phillip B. and Coombes, Kevin R. and Deaver, Courtney and Chkrebtii, Oksana and Paul, Subhadeep and Toland, Amanda E.} 
-}
-
-
-@article{acdh20,
-  title={High Throughput Screening of Drug Combination with Single Doses},
-  author={{\textbf{Asiaee}}, {\textbf{Amir}} and Coombes, Kevin R. and Davis, Melanie and Hertlein, Erin} 
+@ARTICLE{aans19a,
+  title    = "Identification and comparison of genes differentially regulated
+              by transcription factors and {miRNAs}",
+  author   = "{Asiaee, Amir} and Abrams, Zachary B and Nakayiza, Samantha and
+              Sampath, Deepa and Coombes, Kevin R",
+  archivePrefix = "bioRxiv",
+  eprint        = "803643",
+  note = "https://doi.org/10.1101/803643",
+  abstract = {Transcription factors and microRNAs (miRNA) both play a critical role in gene regulation and in the development of many diseases such as cancer. Understanding how transcription factors and miRNAs influence gene expression is thus important to understand, but complicated due to the large and interconnected nature of the human genome. To help better understand what genes are being regulated by transcription factors and/or miRNAs we looked at it over 8000 patient samples from 32 different cancer types collected from The Cancer Genome Atlas (TCGA). We started by clustering the transcription factors and miRNAs using Thresher to reduce the number of features. Using both the mRNA and miRNA sequencing data we constructed linear models to calculate the coefficient of determination (R2) for each mRNA based on the Thresher cluster expression. We generated three types of linear models: transcription factor, miRNA and transcription factor plus miRNA. We then determined genes that were highly explained or poorly explained by each of the three models based on the genes R2 value. We performed downstream gene enrichment analysis using ToppGene on the sets of well and poorly explained genes. This identified differences in gene regulation between transcription factors and miRNAs and showed what groups of gene are differentially regulated.},
+  year     =  2019
 }
 
 @ARTICLE{aans20,
   title   = "Explaining Gene Expression Using Twenty-One MicroRNAs",
   author  = {Asiaee*, Amir and Abrams*, Zachary B. and Nakayiza, Samantha and Sampath, Deepa and Coombes, Kevin R.},
-  abstract = {The transcriptome, or gene expression profile, of a tumor contains detailed information about the disease. Although advances in sequencing tech-nologies have generated larger and more infor-mative data sets, there are still many questions about how the transcriptome is regulated. One class of regulatory elements consists of micro-RNAs (or miRs), many of which are known to be associated with cancer. To better understand the relationships between microRNAs and differ-ent cancers, we analyzed ∼9000 samples from 32 cancer types studies in The Cancer Genome Atlas (TCGA). Using the Thresher R package to per-form feature reduction, we found evidence for 21 biologically interpretable clusters of miRs. Many of these clusters were statistically associated with a specific type of cancer. Moreover, the clusters contain sufficient information to distinguish be-tween most types of cancer. We then used linear models to measure, genome-wide, how much vari-ation in gene expression could be explained by the 21 average expression values (“score”) of the clus-ters. Based on the ~20,000 per-gene R2 values, we found that (a) mean differences between can-cer types explain about 40% of variation; (b) the 21 miR cluster scores explain about 30% of varia-tion, and (c) combining cancer type with the miR scores explained about 56% of the total genome-wide variation in gene expression. Our analysis of poorly explained genes shows that they are en-riched for olfactory receptor processes, sensory perception and nervous system processing which are necessary to receive and interpret signals from outside the organism. Therefore, it is reasonable for those genes to be always active and not get down-regulated by miRs. In contrast, highly ex-plained genes are characterized by genes trans-lating to proteins necessary for transport, plasma membrane, or metabolic processes that are heav-ily regulated processes inside the cell. The dis-tribution of R2 values suggests that other genetic regulatory elements such as transcription factors (TF) and methylation would help explain some of the remaining variation in gene expression. By building a combined microRNA-TF-methylation model, we can potentially predict the majority of human transcriptomic expression.},
+  abstract = {The transcriptome, or gene expression profile, of a tumor contains detailed information about the disease. Although advances in sequencing tech-nologies have generated larger and more infor-mative data sets, there are still many questions about how the transcriptome is regulated. One class of regulatory elements consists of micro-RNAs (or miRs), many of which are known to be associated with cancer. To better understand the relationships between microRNAs and differ-ent cancers, we analyzed ~9000 samples from 32 cancer types studies in The Cancer Genome Atlas (TCGA). Using the Thresher R package to per-form feature reduction, we found evidence for 21 biologically interpretable clusters of miRs. Many of these clusters were statistically associated with a specific type of cancer. Moreover, the clusters contain sufficient information to distinguish be-tween most types of cancer. We then used linear models to measure, genome-wide, how much vari-ation in gene expression could be explained by the 21 average expression values (“score”) of the clus-ters. Based on the ~20,000 per-gene R2 values, we found that (a) mean differences between can-cer types explain about 40% of variation; (b) the 21 miR cluster scores explain about 30% of varia-tion, and (c) combining cancer type with the miR scores explained about 56% of the total genome-wide variation in gene expression. Our analysis of poorly explained genes shows that they are en-riched for olfactory receptor processes, sensory perception and nervous system processing which are necessary to receive and interpret signals from outside the organism. Therefore, it is reasonable for those genes to be always active and not get down-regulated by miRs. In contrast, highly ex-plained genes are characterized by genes trans-lating to proteins necessary for transport, plasma membrane, or metabolic processes that are heav-ily regulated processes inside the cell. The dis-tribution of R2 values suggests that other genetic regulatory elements such as transcription factors (TF) and methylation would help explain some of the remaining variation in gene expression. By building a combined microRNA-TF-methylation model, we can potentially predict the majority of human transcriptomic expression.},
   journal = "Journal of computational biology",
   volume   =  "Forthcoming",
   year    =  {2020}
 }
-
-
 
 @inproceedings{aans19,
   title   = "Explaining Gene Expression Using Twenty-One MicroRNAs",
@@ -38,7 +32,6 @@
   booktitle = "Computational Biology Workshop at ICML 2019",
   year    =  2019
 }
-
 
 @ARTICLE{cak18,
   title   = "Elastic Statistical Shape Analysis of Biological Structures with
@@ -52,7 +45,6 @@
   year     =  2019,
   note = "https://dx.doi.org/10.1007/s11538-019-00609-w"
 }
-
 
 
 @ARTICLE{azwa18,
