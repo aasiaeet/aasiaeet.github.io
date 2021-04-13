@@ -4,7 +4,7 @@ permalink: /bio/
 author_profile: true
 title: Extended Bio
 ---
-I am a postdoctoral fellow  at the [Mathematical Biosciences Institute](https://mbi.osu.edu/) and the [Department of Biomedical Informatics](https://medicine.osu.edu/bmi/Pages/index.aspx) at the [Ohio State University](https://www.osu.edu/) working with Professor [Kevin Coombes](https://medicine.osu.edu/bmi/people/kevin_coombes/pages/index.aspx).  I am currently supported by an [NHGRI](https://www.genome.gov/) [K99](https://grants.nih.gov/grants/guide/pa-files/PA-20-188.html) grant. In Augest 2021, I will start as an Assistant Professor of Biostatistics at the Vanderbilt University.
+I am a postdoctoral fellow  at the [Mathematical Biosciences Institute](https://mbi.osu.edu/) and the [Department of Biomedical Informatics](https://medicine.osu.edu/bmi/Pages/index.aspx) at the [Ohio State University](https://www.osu.edu/) working with Professor [Kevin Coombes](https://medicine.osu.edu/bmi/people/kevin_coombes/pages/index.aspx).  I am currently supported by an [NHGRI](https://www.genome.gov/) [K99](https://grants.nih.gov/grants/guide/pa-files/PA-20-188.html) grant. In August 2021, I will start as an Assistant Professor of Biostatistics at the Vanderbilt University.
 
 My research interests are machine learning, computational biology, and bioinformatics. Currently, I am working on the causal effect estimation of regulatory molecules on transcription. I also have ongoing collaborations with oncologists and working on interesting cancer-related problems such as drug screening and cancer progression modeling.
 
