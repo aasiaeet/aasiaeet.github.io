@@ -6,6 +6,10 @@ $abstract-color                : #009628 !default;
 $BibTex-color                  : #b201a6 !default;  
 $download-color                : #b51b00 !default;  
 $supplement-color              : #abb500 !default;   
+
+.author__avatar img {
+    max-width: 250px !important;
+}
    
 .center-image
 {
