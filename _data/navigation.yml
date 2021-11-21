@@ -12,6 +12,8 @@ main:
     url: /service
   - title: "Blog"
     url: /blog
+  - title: "Join Us"
+    url: /joinus
 
  
   
