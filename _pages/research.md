@@ -4,7 +4,7 @@ permalink: /research/
 author_profile: true
 title: Research Projects
 ---
-Here is the list of ongoing projects of AA Lab:
+Below is the list of ongoing projects of AA Lab and my current research interests. If you are already a Vandy student or have been admitted, feel free to contact me about interests we may share.
 
 1. Whole Transcriptome Prediction
 	- Transcriptome or gene expression profile captures the activity of all genes in a sample at once. One can hope to represent the state of a sample (cell) with its transcriptome (~20k genes). Although measuring gene expression using RNA-Seq is much cheaper than a decade ago, scaling it to millions of samples is expensive.
