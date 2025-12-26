@@ -1,0 +1,27 @@
+{{/* Renders a single publication entry with number */}}
+{{- $pub := .pub -}}
+{{- $num := .num -}}
+
+<div class="publication-item" id="{{ $pub.key }}">
+  <span class="pub-number">{{ $num }}.</span>
+  <div class="pub-content">
+    <span class="pub-title">{{ $pub.title }}</span>
+    <span class="pub-authors">{{ delimit $pub.authors ", " }}.</span>
+    <span class="pub-venue">
+      {{- if $pub.venue }}<em>{{ $pub.venue }}</em>{{- end }}
+      {{- if $pub.volume }}, {{ $pub.volume }}{{- end }}
+      {{- if $pub.number }}({{ $pub.number }}){{- end }}
+      {{- if $pub.pages }}, {{ $pub.pages }}{{- end }}
+      {{- if $pub.year }}, {{ $pub.year }}{{- end }}.
+    </span>
+    <span class="pub-links">
+      {{- $pdfPath := printf "/publications/%s.pdf" $pub.key -}}
+      {{- if fileExists (printf "static%s" $pdfPath) }}<a href="{{ $pdfPath }}" target="_blank">PDF</a>
+      {{- else if $pub.pdf }}<a href="{{ $pub.pdf }}" target="_blank">PDF</a>{{- end }}
+      {{- if $pub.doi }}<a href="https://doi.org/{{ $pub.doi }}" target="_blank" rel="noopener">DOI</a>{{- end }}
+      {{- if $pub.arxiv }}<a href="https://arxiv.org/abs/{{ $pub.arxiv }}" target="_blank" rel="noopener">arXiv</a>{{- end }}
+      {{- if $pub.code }}<a href="{{ $pub.code }}" target="_blank" rel="noopener">Code</a>{{- end }}
+      {{- if and $pub.url (not $pub.doi) (not $pub.arxiv) }}<a href="{{ $pub.url }}" target="_blank" rel="noopener">Link</a>{{- end }}
+    </span>
+  </div>
+</div>

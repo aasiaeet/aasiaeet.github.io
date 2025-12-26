@@ -1,0 +1,70 @@
+{{- define "main" }}
+<article class="post-single">
+  <header class="post-header">
+    <h1 class="post-title entry-hint-parent">
+      {{ .Title }}
+    </h1>
+  </header>
+
+  <div class="post-content">
+    <div class="publications-intro">
+      {{ .Content }}
+    </div>
+
+    {{/* View switcher buttons */}}
+    <div class="pub-view-switcher">
+      <a href="/publications/" class="pub-view-btn {{ if or (eq .RelPermalink "/publications/") (eq .RelPermalink "/publicationbyyear/") }}active{{ end }}">By Year</a>
+      <a href="/publicationbytopic/" class="pub-view-btn {{ if eq .RelPermalink "/publicationbytopic/" }}active{{ end }}">By Topic</a>
+    </div>
+
+    {{- $publications := site.Data.publications -}}
+    {{- if not $publications }}
+    <p><em>No publications found. Run bib2json.py to generate publications.json.</em></p>
+    {{- else }}
+
+    {{/* Sort by year ascending to get publication numbers (oldest=1) */}}
+    {{- $sortedByYear := sort $publications "year" "asc" -}}
+    {{- $pubNumbers := dict -}}
+    {{- $counter := 1 -}}
+    {{- range $sortedByYear -}}
+      {{- $pubNumbers = merge $pubNumbers (dict .key $counter) -}}
+      {{- $counter = add $counter 1 -}}
+    {{- end -}}
+
+    {{/* Group publications by year (descending for display) */}}
+    {{- $years := slice -}}
+    {{- range $publications -}}
+      {{- if not (in $years .year) -}}
+        {{- $years = $years | append .year -}}
+      {{- end -}}
+    {{- end -}}
+    {{- $years = sort $years "value" "desc" -}}
+
+    {{- range $year := $years }}
+      {{- if gt $year 0 }}
+      <h2 class="pub-year-heading" id="year-{{ $year }}">{{ $year }}</h2>
+      {{- else }}
+      <h2 class="pub-year-heading" id="in-progress">In the Pipeline</h2>
+      {{- end }}
+
+      {{/* Collect publications for this year with their numbers */}}
+      {{- $yearPubs := slice -}}
+      {{- range $publications }}
+        {{- if eq .year $year }}
+          {{- $num := index $pubNumbers .key -}}
+          {{- $yearPubs = $yearPubs | append (dict "pub" . "num" $num) -}}
+        {{- end }}
+      {{- end }}
+
+      {{/* Sort by number descending (highest first) */}}
+      {{- $yearPubs = sort $yearPubs "num" "desc" -}}
+
+      {{- range $yearPubs }}
+        {{- partial "publication-item.html" . -}}
+      {{- end }}
+    {{- end }}
+
+    {{- end }}
+  </div>
+</article>
+{{- end }}

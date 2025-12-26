@@ -1,0 +1,166 @@
+baseURL: "https://www.amirasiaee.com/"
+languageCode: en-us
+title: Amir Asiaee
+theme: PaperModX
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production
+  title: Amir Asiaee
+  description: "I develop causal and statistical learning methods for multiscale biological and clinical systems, with applications in genomics, immunology, and data integration."
+  keywords:
+    [
+      Causal Inference and Discovery,
+      Statistical Learning,
+      Computational Biology,
+      Genomics,
+      Immunology,
+      Data Fusion,
+      Biomedical Informatics
+    ]
+
+  author: Amir Asiaee
+  images: ["/images/shot.jpg"]
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto
+  disableThemeToggle: false
+
+  # Content display options
+  ShowReadingTime: true
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: false
+  ShowRssButtonInSectionTermList: false
+  disableSpecial1stPost: true
+  disableScrollToTop: false
+  comments: true
+  hidemeta: false
+  hideSummary: false
+
+  # Table of Contents - PaperModX floating sidebar
+  TocSide: 'right'  # Floating ToC on right side
+  showtoc: true
+  tocopen: true
+
+  # Disable profile mode - use homeInfoParams instead
+  # profileMode:
+  #   enabled: false
+
+  # Homepage info with image
+  homeInfoParams:
+    Title: "Amir Asiaee"
+    imageUrl: "/images/shot.jpg"
+    Content: |
+      Assistant Professor of [Biostatistics](https://www.vumc.org/biostatistics/) and [Biomedical Informatics](https://www.vumc.org/dbmi/) at [Vanderbilt University Medical Center](https://www.vumc.org/main/home).
+
+      My research focuses on **causal inference and statistical learning for complex biological and clinical systems**, with an emphasis on **integrating experimental and observational data**. I develop principled models that connect **high-dimensional molecular measurements** to interpretable mechanisms in **genomics, immunology, and regulatory biology**.
+
+      [View my CV](/cv/Amir-Asiaee-CV.pdf)
+
+  # Site label in header
+  label:
+    text: "Amir Asiaee"
+    icon: /images/shot.jpg
+    iconHeight: 35
+
+  socialIcons:
+    - name: email
+      url: "mailto:amir.asiaeetaheri@vumc.org"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/amir-asiaee-28478532"
+    - name: googlescholar
+      url: "https://scholar.google.com/citations?user=RrV5LtsAAAAJ"
+    - name: github
+      url: "https://github.com/aasiaeet"
+
+  assets:
+    favicon: "/favicon.ico"
+    favicon16x16: "/favicon-16x16.png"
+    favicon32x32: "/favicon-32x32.png"
+    apple_touch_icon: "/apple-touch-icon.png"
+
+  cover:
+    hidden: true
+    hiddenInList: true
+    hiddenInSingle: true
+
+  # Giscus comments configuration
+  giscus:
+    repo: "aasiaeet/aasiaeet.github.io"
+    repoId: ""  # Fill this after enabling Discussions
+    category: "Announcements"
+    categoryId: ""  # Fill this after enabling Discussions
+    mapping: "pathname"
+    reactionsEnabled: "1"
+    emitMetadata: "0"
+    inputPosition: "top"
+    theme: "preferred_color_scheme"
+    lang: "en"
+
+  # Math rendering
+  math: true
+
+menu:
+  main:
+    - identifier: research
+      name: Research
+      url: /research/
+      weight: 10
+    - identifier: publications
+      name: Publications
+      url: /publications/
+      weight: 20
+    - identifier: people
+      name: People
+      url: /people/
+      weight: 30
+    - identifier: blog
+      name: Blog
+      url: /blog/
+      weight: 40
+    - identifier: notes
+      name: Notes
+      url: /notes/
+      weight: 60
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+    anchorLineNos: true
+    codeFences: true
+    guessSyntax: true
+    lineNos: true
+    style: monokai
+  tableOfContents:
+    startLevel: 2
+    endLevel: 4
+    ordered: false
+
+taxonomies:
+  category: categories
+  tag: tags
+  series: series
+
+sitemap:
+  changefreq: monthly
+  filename: sitemap.xml
+  priority: 0.5

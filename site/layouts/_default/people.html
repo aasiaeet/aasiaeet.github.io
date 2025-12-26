@@ -1,0 +1,68 @@
+{{- define "main" }}
+<article class="post-single">
+  <header class="post-header">
+    <h1 class="post-title entry-hint-parent">
+      {{ .Title }}
+    </h1>
+  </header>
+
+  <div class="post-content">
+    {{ .Content }}
+
+    {{- $people := site.Data.people -}}
+
+    {{/* Current Students */}}
+    {{- if $people.current_students }}
+    <h2 class="people-section-heading">Current Students</h2>
+    <ul class="people-list">
+      {{- range $people.current_students }}
+      <li class="person-item">
+        <span class="person-name">
+          {{- if .website }}<a href="{{ .website }}" target="_blank" rel="noopener">{{ .name }}</a>
+          {{- else }}{{ .name }}{{- end }}
+        </span>
+        {{- if .role }} &mdash; {{ .role }}{{- end }}
+        {{- if .research }}<span class="person-research"> ({{ .research }})</span>{{- end }}
+      </li>
+      {{- end }}
+    </ul>
+    {{- end }}
+
+    {{/* Collaborators */}}
+    {{- if $people.collaborators }}
+    <h2 class="people-section-heading">Collaborators</h2>
+    <ul class="collaborators-list">
+      {{- range $people.collaborators }}
+      <li class="collaborator-item">
+        {{- if .website }}<a href="{{ .website }}" target="_blank" rel="noopener">{{ .name }}</a>
+        {{- else }}{{ .name }}{{- end }}
+        {{- if .affiliation }},
+          {{- if .affiliation_url }}<a href="{{ .affiliation_url }}" target="_blank" rel="noopener">{{ .affiliation }}</a>
+          {{- else }}{{ .affiliation }}{{- end }}
+        {{- end }}
+      </li>
+      {{- end }}
+    </ul>
+    {{- end }}
+
+    {{/* Alumni - sorted by graduation year descending */}}
+    {{- if $people.alumni }}
+    <h2 class="people-section-heading">Alumni</h2>
+    <ul class="alumni-list">
+      {{- $sortedAlumni := sort $people.alumni "year_graduated" "desc" }}
+      {{- range $sortedAlumni }}
+      <li class="alumni-item">
+        <span class="alumni-name">
+          {{- if .website }}<a href="{{ .website }}" target="_blank" rel="noopener">{{ .name }}</a>
+          {{- else }}{{ .name }}{{- end }}
+        </span>
+        {{- if .role }} ({{ .role }}{{- if .year_graduated }}, {{ .year_graduated }}{{- end }}){{- end }}
+        {{- if and .current_position (ne .current_position "Alumni") }} &mdash; {{ .current_position }}{{- end }}
+      </li>
+      {{- end }}
+    </ul>
+    {{- end }}
+
+  </div>
+</article>
+{{- end }}

@@ -12,3 +12,21 @@ example/_site
 Gemfile.lock
 node_modules
 npm-debug.log*
+
+# Hugo
+site/public/
+site/.hugo_build.lock
+site/resources/
+
+# Quartz
+quartz/public/
+quartz/.quartz-cache/
+
+# Notes (generated from Quartz build)
+site/static/notes/
+
+# Zotero export (temporary import folder)
+site/mypapers/
+
+# Generated JSON (regenerated from BibTeX)
+site/data/publications.json

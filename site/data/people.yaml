@@ -1,0 +1,134 @@
+# People data file
+# Order: current_students, collaborators, alumni
+
+current_students:
+  - name: "Samhita Pal"
+    role: "Postdoctoral Fellow"
+    website: ""
+    research: ""
+
+alumni:
+  - name: "Leila Azinfar"
+    role: "Postdoctoral Fellow"
+    year_graduated: 2025
+    current_position: ""
+    website: ""
+
+  - name: "Youssef Botros"
+    role: "Research Intern"
+    year_graduated: 2024
+    current_position: ""
+    website: ""
+
+  - name: "LaShawnda Stevens"
+    role: "Research Intern"
+    year_graduated: 2024
+    current_position: ""
+    website: ""
+
+  - name: "Chiara Di Gravio"
+    role: "PhD Student Collaborator"
+    year_graduated: 2023
+    current_position: "Research Associate at Imperial College London"
+    website: ""
+
+  - name: "Jared Strauch"
+    role: "MS Student (Biostatistics)"
+    year_graduated: 2023
+    current_position: ""
+    website: ""
+
+  - name: "Yuting Mei"
+    role: "MS Student (Data Science)"
+    year_graduated: 2023
+    current_position: ""
+    website: ""
+
+  - name: "Elisa Yazdani"
+    role: "MS Student (Biostatistics)"
+    year_graduated: 2023
+    current_position: ""
+    website: ""
+
+  - name: "Dora Obodo"
+    role: "PhD Student (Co-advised)"
+    year_graduated: 2023
+    current_position: "Postdoc at  St. Jude Children's Research Hospital"
+    website: ""
+
+  - name: "Mary Guirguis"
+    role: "Research Intern"
+    year_graduated: 2023
+    current_position: ""
+    website: ""
+
+  - name: "Akshat Vasisht"
+    role: "Research Intern"
+    year_graduated: 2023
+    current_position: ""
+    website: ""
+
+  - name: "Phillip B. Nicol"
+    role: "Research Intern"
+    year_graduated: 2020
+    current_position: "PhD Student at Harvard University"
+    website: "https://phillipnicol.github.io/"
+
+  - name: "Courtney Deaver"
+    role: "Research Intern"
+    year_graduated: 2020
+    current_position: ""
+    website: ""
+
+collaborators:
+  - name: "Bradley Malin"
+    affiliation: "VUMC, Dept. of Biomedical Informatics"
+    website: "https://www.vumc.org/dbmi/person/bradley-malin-phd-facmi-faimbe-fiahsi"
+
+  - name: "Bryan E. Shepherd"
+    affiliation: "VUMC, Dept. of Biostatistics"
+    website: "https://shepheb1.github.io/"
+
+  - name: "Cathy Shyr"
+    affiliation: "VUMC, Dept. of Biomedical Informatics"
+    website: "https://www.cathyshyr.org/"
+
+  - name: "Cole Beck"
+    affiliation: "VUMC, Dept. of Biostatistics"
+    website: "https://biostat.app.vumc.org/wiki/Main/ColeBeck"
+
+  - name: "Elizabeth Phillips"
+    affiliation: "VUMC, Dept. of Medicine"
+    website: "https://medschool.vanderbilt.edu/pharmacology/person/elizabeth-phillips-m-d/"
+
+  - name: "Eric Mukherjee"
+    affiliation: "VUMC, Dept. of Dermatology"
+    website: ""
+
+  - name: "Heather Pua"
+    affiliation: "VUMC, Dept. of Pathology, Microbiology & Immunology"
+    website: "https://www.vumc.org/pua-lab/"
+
+  - name: "James P. Long"
+    affiliation: "MD Anderson, Dept. of Biostatistics"
+    website: "https://faculty.mdanderson.org/profiles/james_long.html"
+
+  - name: "Jared D. Huling"
+    affiliation: "UMN, Div. of Biostatistics"
+    website: "https://jaredhuling.org/"
+
+  - name: "Kevin R. Coombes"
+    affiliation: "Augusta Univ., Dept. of Biostatistics, Data Science & Epidemiology"
+    website: "https://augusta.elsevierpure.com/en/persons/kevin-coombes"
+
+  - name: "Simon Mallal"
+    affiliation: "VUMC, Dept. of Medicine"
+    website: "https://www.vumc.org/viiii/person/simon-mallal-mbbs-fracp-frcpa"
+
+  - name: "Spyros Kalams"
+    affiliation: "VUMC, Dept. of Medicine"
+    website: "https://www.vumc.org/viiii/person/spyros-kalams-md"
+
+  - name: "Zachary B. Abrams"
+    affiliation: "WashU, Informatics, Data Science & Biostatistics"
+    website: "https://i2db.wustl.edu/people/zachary-abrams-phd/"

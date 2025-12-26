@@ -1,0 +1,102 @@
+/* People page styling */
+
+.people-section-heading {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.people-section-heading:first-of-type {
+  margin-top: 0;
+}
+
+/* Current students list */
+.people-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem 0;
+}
+
+.person-item {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.person-item:last-child {
+  border-bottom: none;
+}
+
+.person-name {
+  font-weight: 600;
+}
+
+.person-name a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.person-name a:hover {
+  color: var(--tertiary);
+}
+
+.person-research {
+  font-size: 0.9rem;
+  color: var(--secondary);
+}
+
+/* Alumni list */
+.alumni-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem 0;
+}
+
+.alumni-item {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.alumni-item:last-child {
+  border-bottom: none;
+}
+
+.alumni-name a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.alumni-name a:hover {
+  color: var(--tertiary);
+}
+
+/* Collaborators list */
+.collaborators-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem 0;
+  column-count: 2;
+  column-gap: 2rem;
+}
+
+.collaborator-item {
+  padding: 0.35rem 0;
+  break-inside: avoid;
+}
+
+.collaborator-item a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.collaborator-item a:hover {
+  color: var(--tertiary);
+}
+
+@media (max-width: 600px) {
+  .collaborators-list {
+    column-count: 1;
+  }
+}

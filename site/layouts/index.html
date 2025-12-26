@@ -1,0 +1,82 @@
+{{- define "main" }}
+
+{{/* Profile/Bio Section */}}
+{{- partial "home_info.html" . }}
+
+<div class="home-sections">
+
+  {{/* Current Focus Section */}}
+  {{- with site.Params.currentFocus }}
+  <section class="home-section">
+    <h2 class="home-section-title">Current Focus</h2>
+    <div class="home-section-content">
+      {{ . | markdownify }}
+    </div>
+  </section>
+  {{- end }}
+
+  {{/* Selected Papers Section */}}
+  {{- with site.Data.publications }}
+  {{- $featured := where . "featured" true }}
+  {{- if $featured }}
+  <section class="home-section">
+    <h2 class="home-section-title">Selected Papers</h2>
+    <div class="selected-papers">
+      {{- range $featured }}
+      <div class="selected-paper">
+        <span class="paper-title">{{ .title }}</span>
+        <span class="paper-venue">{{ .venue }}{{ if .year }}, {{ .year }}{{ end }}</span>
+        <span class="paper-links">
+          {{- if .doi }}<a href="https://doi.org/{{ .doi }}" target="_blank">DOI</a>{{- end }}
+          {{- if .arxiv }}<a href="https://arxiv.org/abs/{{ .arxiv }}" target="_blank">arXiv</a>{{- end }}
+        </span>
+      </div>
+      {{- end }}
+    </div>
+    <a href="/publications/" class="home-section-link">View all publications &rarr;</a>
+  </section>
+  {{- end }}
+  {{- end }}
+
+  {{/* Recent Posts Section - using theme's card style */}}
+  {{- $posts := where site.RegularPages "Section" "blog" }}
+  {{- $posts = first 3 $posts }}
+  {{- if $posts }}
+  <section class="home-section">
+    <h2 class="home-section-title">Recent Posts</h2>
+    {{- range $posts }}
+    <article class="post-entry">
+      <header class="entry-header">
+        <h2>{{ .Title }}</h2>
+      </header>
+      {{- if (ne (.Param "hideSummary") true) }}
+      <section class="entry-content">
+        {{ if .Description }}
+          <p>{{ .Description | plainify | htmlUnescape }}</p>
+        {{ else }}
+          <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
+        {{ end }}
+      </section>
+      {{- end }}
+      <footer class="entry-footer">
+        {{- partial "post_meta.html" . -}}
+      </footer>
+      <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+    </article>
+    {{- end }}
+    <a href="/blog/" class="home-section-link">View all posts &rarr;</a>
+  </section>
+  {{- end }}
+
+  {{/* Recent Notes Section */}}
+  <section class="home-section">
+    <h2 class="home-section-title">Recent Notes</h2>
+    <p class="home-section-description">
+      A collection of research notes, tutorials, and technical explorations.
+    </p>
+    <a href="/notes/" class="home-section-link">Browse notes garden &rarr;</a>
+  </section>
+
+</div>
+
+{{- end }}

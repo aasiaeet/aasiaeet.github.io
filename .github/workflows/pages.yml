@@ -1,0 +1,92 @@
+# GitHub Actions workflow to build Hugo + Quartz and deploy to GitHub Pages
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - master
+      - migrate-hugo-quartz  # Remove after migration complete
+  workflow_dispatch:
+
+# Sets permissions for GITHUB_TOKEN
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one deployment at a time
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: '.nvmrc'
+          cache: 'npm'
+          cache-dependency-path: quartz/package-lock.json
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: '0.147.0'
+          extended: true
+
+      - name: Install Quartz dependencies
+        run: npm ci
+        working-directory: quartz
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Python dependencies
+        run: pip install pyyaml
+
+      - name: Convert BibTeX to JSON
+        run: python3 scripts/bib2json.py site/bib/publications.bib site/data/publications.json site/data/pub_topics.yaml
+
+      - name: Build Quartz
+        run: npx quartz build
+        working-directory: quartz
+
+      - name: Copy Quartz output to Hugo static
+        run: |
+          rm -rf site/static/notes
+          cp -r quartz/public site/static/notes
+
+      - name: Build Hugo
+        run: hugo --gc --minify
+        working-directory: site
+        env:
+          HUGO_ENV: production
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site/public
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

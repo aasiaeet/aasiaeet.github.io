@@ -1,0 +1,22 @@
+{{- with site.Params.homeInfoParams }}
+<article class="first-entry home-info home-info-with-image">
+  <div class="home-info-container">
+    {{- if site.Params.homeInfoParams.imageUrl }}
+    <div class="home-info-image">
+      <img src="{{ site.Params.homeInfoParams.imageUrl }}" alt="{{ site.Params.homeInfoParams.Title }}" loading="lazy" />
+    </div>
+    {{- end }}
+    <div class="home-info-content">
+      <header class="entry-header">
+        <h1>{{ .Title | markdownify }}</h1>
+      </header>
+      <section class="entry-content">
+        {{- trim .Content "\n" | markdownify -}}
+      </section>
+      <footer class="entry-footer">
+        {{- partial "social_icons.html" (dict "icons" site.Params.socialIcons "svg" $.Site.Data.svg "MaskedEmail" site.Params.MaskedEmail "Email" site.Params.Email) -}}
+      </footer>
+    </div>
+  </div>
+</article>
+{{- end -}}

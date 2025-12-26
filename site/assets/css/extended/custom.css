@@ -1,0 +1,441 @@
+/* Custom typography and styling for academic site */
+
+/* ==========================================================================
+   Light Theme - Warm Academic (inspired by sepia/warm tones)
+   ========================================================================== */
+
+:root {
+  /* Warm light theme colors */
+  --theme-light: #fdfbf7;           /* Warm off-white background */
+  --theme-light-secondary: #f5f2eb; /* Slightly darker warm */
+  --theme-text: #2d3436;            /* Dark charcoal, not pure black */
+  --theme-text-secondary: #636e72;  /* Muted gray */
+  --theme-accent: #0984e3;          /* Professional blue accent */
+  --theme-accent-hover: #0652DD;    /* Darker blue on hover */
+  --theme-border: #dfe6e9;          /* Light gray border */
+  --theme-code-bg: #f1f0eb;         /* Warm code background */
+
+  /* System font stack - clean and professional */
+  --font-body: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-heading: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+  /* Layout */
+  --content-max-width: 900px;
+}
+
+/* Apply warm light theme */
+body:not(.dark) {
+  --theme: var(--theme-light);
+  --entry: var(--theme-light);
+  --primary: var(--theme-text);
+  --secondary: var(--theme-text-secondary);
+  --tertiary: var(--theme-accent);
+  --content: var(--theme-text);
+  --code-bg: var(--theme-code-bg);
+  --border: var(--theme-border);
+  background: var(--theme-light);
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+body {
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+h1 { font-size: 2rem; }
+h2 { font-size: 1.5rem; margin-top: 2rem; }
+h3 { font-size: 1.25rem; }
+
+code, pre, .highlight {
+  font-family: var(--font-mono);
+}
+
+/* ==========================================================================
+   Homepage with Profile Image
+   ========================================================================== */
+
+.home-info-with-image .home-info-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.home-info-with-image .home-info-image {
+  flex-shrink: 0;
+}
+
+.home-info-with-image .home-info-image img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--border);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.home-info-with-image .home-info-content {
+  flex: 1;
+  min-width: 280px;
+}
+
+.home-info-with-image .entry-header h1 {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Mobile: stack vertically */
+@media (max-width: 600px) {
+  .home-info-with-image .home-info-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .home-info-with-image .home-info-image img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+/* Homepage - left aligned */
+.first-entry {
+  text-align: left;
+}
+
+/* ==========================================================================
+   Links - Fix double underline issue (PaperModX uses box-shadow for underlines)
+   ========================================================================== */
+
+/* Override PaperModX box-shadow underlines globally */
+:root {
+  --link-underline-shadow: none;
+  --link-hover-underline-shadow: none;
+}
+
+/* Remove all default underlines */
+a {
+  text-decoration: none;
+  box-shadow: none !important;
+}
+
+/* Content links: simple underline using text-decoration */
+.post-content a,
+.entry-content a {
+  color: var(--theme-accent);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  box-shadow: none !important;
+}
+
+.post-content a:hover,
+.entry-content a:hover {
+  color: var(--theme-accent-hover);
+}
+
+/* Nav links: no underline */
+.nav a,
+.logo a,
+.post-title a,
+.entry-header a {
+  text-decoration: none !important;
+  box-shadow: none !important;
+}
+
+.nav a:hover {
+  color: var(--theme-accent);
+}
+
+/* Footer links */
+.footer a {
+  box-shadow: none !important;
+}
+
+/* ==========================================================================
+   Table of Contents sidebar
+   ========================================================================== */
+
+.toc {
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.toc a {
+  color: var(--secondary);
+  text-decoration: none;
+}
+
+.toc a:hover {
+  color: var(--theme-accent);
+}
+
+@media (min-width: 1280px) {
+  .toc-side {
+    position: sticky;
+    top: 80px;
+    max-height: calc(100vh - 100px);
+    overflow-y: auto;
+  }
+}
+
+/* ==========================================================================
+   Navigation
+   ========================================================================== */
+
+.nav {
+  font-weight: 500;
+}
+
+.nav a {
+  padding: 0.5rem 0.75rem;
+}
+
+/* ==========================================================================
+   Content styling
+   ========================================================================== */
+
+.main {
+  max-width: var(--content-max-width);
+}
+
+.post-content {
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.post-content p {
+  margin-bottom: 1.25rem;
+}
+
+.post-content ul, .post-content ol {
+  margin-bottom: 1.25rem;
+  padding-left: 1.5rem;
+}
+
+.post-content li {
+  margin-bottom: 0.5rem;
+}
+
+/* Post list - compact blog cards */
+.post-entry {
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.post-entry:last-child {
+  border-bottom: none;
+}
+
+.post-entry .entry-header h2 {
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+  line-height: 1.3;
+}
+
+.post-entry .entry-content {
+  font-size: 0.9rem;
+  margin-bottom: 0.25rem;
+  color: var(--secondary);
+}
+
+.post-entry .entry-footer {
+  font-size: 0.8rem;
+  color: var(--secondary);
+}
+
+/* Blockquotes */
+blockquote {
+  border-left: 3px solid var(--theme-accent);
+  padding-left: 1rem;
+  font-style: italic;
+  color: var(--secondary);
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+}
+
+th, td {
+  padding: 0.75rem;
+  border: 1px solid var(--border);
+  text-align: left;
+}
+
+th {
+  background: var(--code-bg);
+  font-weight: 600;
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+.footer {
+  font-size: 0.875rem;
+}
+
+/* ==========================================================================
+   Dark mode - keep existing good dark theme
+   ========================================================================== */
+
+.dark {
+  --border: #3a3a3a;
+}
+
+/* ==========================================================================
+   Homepage Sections
+   ========================================================================== */
+
+.home-sections {
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+  padding: 0 var(--gap);
+}
+
+.home-section {
+  margin-bottom: 2.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.home-section:last-child {
+  border-bottom: none;
+}
+
+.home-section-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--primary);
+}
+
+.home-section-content {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--secondary);
+}
+
+.home-section-content p {
+  margin-bottom: 0.75rem;
+}
+
+.home-section-description {
+  font-size: 0.9rem;
+  color: var(--secondary);
+  margin-bottom: 0.75rem;
+}
+
+.home-section-link {
+  display: inline-block;
+  font-size: 0.9rem;
+  color: var(--theme-accent);
+  text-decoration: none !important;
+  margin-top: 0.5rem;
+}
+
+.home-section-link:hover {
+  color: var(--theme-accent-hover);
+}
+
+/* Selected Papers */
+.selected-papers {
+  margin-bottom: 0.75rem;
+}
+
+.selected-paper {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.selected-paper:last-child {
+  border-bottom: none;
+}
+
+.selected-paper .paper-title {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.selected-paper .paper-venue {
+  font-size: 0.9rem;
+  color: var(--secondary);
+  font-style: italic;
+}
+
+.selected-paper .paper-links {
+  margin-left: 0.5rem;
+}
+
+.selected-paper .paper-links a {
+  display: inline-block;
+  padding: 0.1rem 0.4rem;
+  margin-left: 0.25rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--theme-accent);
+  background: rgba(9, 132, 227, 0.08);
+  border-radius: 3px;
+  text-decoration: none !important;
+}
+
+.selected-paper .paper-links a:hover {
+  background: var(--theme-accent);
+  color: white;
+}
+
+/* Recent Posts */
+.recent-posts {
+  margin-bottom: 0.75rem;
+}
+
+.recent-post {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.recent-post:last-child {
+  border-bottom: none;
+}
+
+.recent-post a {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  text-decoration: none !important;
+  color: var(--primary);
+}
+
+.recent-post a:hover .post-title {
+  color: var(--theme-accent);
+}
+
+.recent-post .post-title {
+  font-weight: 500;
+  transition: color 0.15s;
+}
+
+.recent-post .post-date {
+  font-size: 0.85rem;
+  color: var(--secondary);
+  flex-shrink: 0;
+  margin-left: 1rem;
+}

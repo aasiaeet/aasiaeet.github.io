@@ -1,0 +1,67 @@
+_featured: null
+abrams_thirty_2018:
+- Computational Biology
+- Cancer Research
+asiaee_co-evolved_2025:
+- Immunology
+- Infectious Disease
+asiaee_data_2019:
+- Machine Learning
+- Multi-task Learning
+- High Dimensional Statistics
+asiaee_explaining_2020:
+- Computational Biology
+- MicroRNA
+asiaee_high_2023:
+- Machine Learning
+- Multi-task Learning
+- High Dimensional Statistics
+asiaee_improving_2025:
+- Causal Inference
+- Heterogeneous Treatment Effect
+- Conditional Average Treatment Effect
+- Randomized Controlled Trial
+asiaee_t_if_2012:
+- Machine Learning
+- Natural Language Processing
+- Sentiment Analysis
+asiaee_taheri_influence_2013:
+- Social Networks
+asiaee_transcriptome_2025:
+- Computational Biology
+- MicroRNA
+- Transcription Factor
+cho_elastic_2019:
+- Statistical Shape Analysis
+golnari_revisiting_2015:
+- Social Networks Analysis
+- Complex Networks
+liang_generating_2025:
+- Synthetic Data
+mallal_keystone_2025:
+- Keystone Theory
+- Immunology
+mallal_keystone_2025-1:
+- Keystone Theory
+- Immunology
+- T Cell
+- NK Cell
+mukherjee_immune_2025:
+- SJS/TEN
+- Drug Hypersensitivity
+- Immune Checkpoint Inhibitors
+nicol_oncogenetic_2021:
+- Computational Oncology
+- Probabilistic Graphical Models
+- Cancer Progression
+nicol_sith_2022:
+- Computational Oncology
+- Cancer Progression
+pal_dag_2025:
+- Causal Discovery
+- Structur Learning
+- Deconfounding
+zhu_auprc_2025:
+- Cell Perturbation Experiments
+- In silico Cell Models
+- Evaluation Metrics

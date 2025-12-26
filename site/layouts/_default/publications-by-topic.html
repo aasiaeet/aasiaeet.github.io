@@ -1,0 +1,81 @@
+{{- define "main" }}
+<article class="post-single">
+  <header class="post-header">
+    <h1 class="post-title entry-hint-parent">
+      {{ .Title }}
+    </h1>
+  </header>
+
+  <div class="post-content">
+    <div class="publications-intro">
+      {{ .Content }}
+    </div>
+
+    {{/* View switcher buttons */}}
+    <div class="pub-view-switcher">
+      <a href="/publications/" class="pub-view-btn {{ if or (eq .RelPermalink "/publications/") (eq .RelPermalink "/publicationbyyear/") }}active{{ end }}">By Year</a>
+      <a href="/publicationbytopic/" class="pub-view-btn {{ if eq .RelPermalink "/publicationbytopic/" }}active{{ end }}">By Topic</a>
+    </div>
+
+    {{- $publications := site.Data.publications -}}
+    {{- if not $publications }}
+    <p><em>No publications found. Run bib2json.py to generate publications.json.</em></p>
+    {{- else }}
+
+    {{/* Sort by year ascending to get publication numbers (oldest=1) */}}
+    {{- $sortedByYear := sort $publications "year" "asc" -}}
+    {{- $pubNumbers := dict -}}
+    {{- $counter := 1 -}}
+    {{- range $sortedByYear -}}
+      {{- $pubNumbers = merge $pubNumbers (dict .key $counter) -}}
+      {{- $counter = add $counter 1 -}}
+    {{- end -}}
+
+    {{/* Group publications by topic */}}
+    {{- $topics := slice -}}
+    {{- range $publications -}}
+      {{- range .topics -}}
+        {{- if and (not (in $topics .)) (ne . "Unassigned") -}}
+          {{- $topics = $topics | append . -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+    {{- $topics = sort $topics -}}
+
+    {{/* Check if there are unassigned publications */}}
+    {{- $hasUnassigned := false -}}
+    {{- range $publications -}}
+      {{- if in .topics "Unassigned" -}}
+        {{- $hasUnassigned = true -}}
+      {{- end -}}
+    {{- end -}}
+
+    {{/* Add Unassigned at the end if needed */}}
+    {{- if $hasUnassigned -}}
+      {{- $topics = $topics | append "Unassigned" -}}
+    {{- end -}}
+
+    {{- range $topic := $topics }}
+      <h2 class="pub-topic-heading" id="{{ anchorize $topic }}">{{ $topic }}</h2>
+
+      {{/* Collect publications for this topic with their numbers */}}
+      {{- $topicPubs := slice -}}
+      {{- range $publications }}
+        {{- if in .topics $topic }}
+          {{- $num := index $pubNumbers .key -}}
+          {{- $topicPubs = $topicPubs | append (dict "pub" . "num" $num) -}}
+        {{- end }}
+      {{- end }}
+
+      {{/* Sort by number descending (highest first) */}}
+      {{- $topicPubs = sort $topicPubs "num" "desc" -}}
+
+      {{- range $topicPubs }}
+        {{- partial "publication-item.html" . -}}
+      {{- end }}
+    {{- end }}
+
+    {{- end }}
+  </div>
+</article>
+{{- end }}
