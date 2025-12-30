@@ -46,8 +46,13 @@ mallal_keystone_2025-1:
 - Immunology
 - T Cell
 - NK Cell
+mukherjee_demographics_2025:
+- SJS/TEN
+- SCAR 
+- Drug Hypersensitivity
 mukherjee_immune_2025:
 - SJS/TEN
+- SCAR
 - Drug Hypersensitivity
 - Immune Checkpoint Inhibitors
 nicol_oncogenetic_2021:
