@@ -5,6 +5,7 @@ abrams_thirty_2018:
 asiaee_causal_2025:
 - Causal Discovery
 - Structure Learning
+- Deconfounding
 asiaee_co-evolved_2025:
 - Immunology
 - Infectious Disease
@@ -39,6 +40,7 @@ asiaee_shape-constrained_2026:
 asiaee_sharp_2026:
 - Causal Inference
 - Heterogeneous Treatment Effect
+- Conditional Average Treatment Effect
 asiaee_t_if_2012:
 - Machine Learning
 - Natural Language Processing
