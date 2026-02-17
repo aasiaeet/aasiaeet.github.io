@@ -31,9 +31,15 @@ asiaee_improving_2025:
 - Heterogeneous Treatment Effect
 - Conditional Average Treatment Effect
 - Randomized Controlled Trial
+asiaee_prism_2026:
+- Differential Privacy
+- Synthetic Data
 asiaee_projected_2026:
 - Algorithmic Fairness
 - Machine Learning
+asiaee_risk-equalized_2026:
+- Differential Privacy
+- Synthetic Data
 asiaee_shape-constrained_2026:
 - Cancer Research
 - Statistical Methods
