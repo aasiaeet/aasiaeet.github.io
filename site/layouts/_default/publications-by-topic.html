@@ -55,6 +55,15 @@
       {{- $topics = $topics | append "Unassigned" -}}
     {{- end -}}
 
+    {{/* Table of contents */}}
+    <nav class="pub-toc">
+      <ul>
+        {{- range $topic := $topics }}
+        <li><a href="#{{ anchorize $topic }}">{{ $topic }}</a></li>
+        {{- end }}
+      </ul>
+    </nav>
+
     {{- range $topic := $topics }}
       <h2 class="pub-topic-heading" id="{{ anchorize $topic }}">{{ $topic }}</h2>
 
