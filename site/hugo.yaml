@@ -124,14 +124,15 @@ menu:
       name: People
       url: /people/
       weight: 30
-    - identifier: blog
-      name: Blog
-      url: /blog/
-      weight: 40
-    - identifier: notes
-      name: Notes
-      url: /notes/
-      weight: 60
+    # DISABLED: Blog and Notes sections (see MAINTENANCE.md to re-enable)
+    # - identifier: blog
+    #   name: Blog
+    #   url: /blog/
+    #   weight: 40
+    # - identifier: notes
+    #   name: Notes
+    #   url: /notes/
+    #   weight: 60
 
 outputs:
   home:

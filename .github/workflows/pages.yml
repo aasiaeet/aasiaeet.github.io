@@ -29,12 +29,13 @@ jobs:
           submodules: recursive
           fetch-depth: 0
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version-file: '.nvmrc'
-          cache: 'npm'
-          cache-dependency-path: quartz/package-lock.json
+      # DISABLED: Node.js and Quartz steps (Notes section disabled - see MAINTENANCE.md)
+      # - name: Setup Node.js
+      #   uses: actions/setup-node@v4
+      #   with:
+      #     node-version-file: '.nvmrc'
+      #     cache: 'npm'
+      #     cache-dependency-path: quartz/package-lock.json
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
@@ -42,9 +43,10 @@ jobs:
           hugo-version: '0.147.0'
           extended: true
 
-      - name: Install Quartz dependencies
-        run: npm ci
-        working-directory: quartz
+      # DISABLED: Quartz/Notes build (see MAINTENANCE.md to re-enable)
+      # - name: Install Quartz dependencies
+      #   run: npm ci
+      #   working-directory: quartz
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -57,14 +59,15 @@ jobs:
       - name: Convert BibTeX to JSON
         run: python3 scripts/bib2json.py site/bib/publications.bib site/data/publications.json site/data/pub_topics.yaml
 
-      - name: Build Quartz
-        run: npx quartz build
-        working-directory: quartz
+      # DISABLED: Quartz/Notes build (see MAINTENANCE.md to re-enable)
+      # - name: Build Quartz
+      #   run: npx quartz build
+      #   working-directory: quartz
 
-      - name: Copy Quartz output to Hugo static
-        run: |
-          rm -rf site/static/notes
-          cp -r quartz/public site/static/notes
+      # - name: Copy Quartz output to Hugo static
+      #   run: |
+      #     rm -rf site/static/notes
+      #     cp -r quartz/public site/static/notes
 
       - name: Build Hugo
         run: hugo --gc --minify
