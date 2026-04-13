@@ -6,6 +6,10 @@ asiaee_causal_2025:
 - Causal Discovery
 - Structure Learning
 - Deconfounding
+asiaee_causalwrap_2026:
+- Computational Biology
+- Machine Learning
+- Causal Inference
 asiaee_co-evolved_2025:
 - Immunology
 - Infectious Disease
@@ -13,6 +17,10 @@ asiaee_data_2019:
 - Machine Learning
 - Multi-task Learning
 - High Dimensional Statistics
+asiaee_efficient_2026:
+- Machine Learning
+- Causal Inference
+- Social Networks
 asiaee_explaining_2020:
 - Computational Biology
 - MicroRNA
@@ -31,6 +39,21 @@ asiaee_improving_2025:
 - Heterogeneous Treatment Effect
 - Conditional Average Treatment Effect
 - Randomized Controlled Trial
+asiaee_improving_2026:
+- Computational Biology
+- Machine Learning
+- Causal Inference
+asiaee_noisecalibrated_2026:
+- Computational Biology
+- Statistical Methods
+asiaee_omittedvariable_2026:
+- Computational Biology
+- Machine Learning
+- Causal Inference
+asiaee_partial_2026:
+- Computational Biology
+- Machine Learning
+- Causal Inference
 asiaee_prism_2026:
 - Differential Privacy
 - Synthetic Data
@@ -103,6 +126,10 @@ pal_dag_2025:
 - Causal Discovery
 - Structur Learning
 - Deconfounding
+pal_improving_2026:
+- Computational Biology
+- Machine Learning
+- Causal Inference
 strauch_improving_2024:
 - Machine Learning
 - Drug Discovery
