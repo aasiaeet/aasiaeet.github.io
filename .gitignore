@@ -30,3 +30,6 @@ site/mypapers/
 
 # Generated JSON (regenerated from BibTeX)
 site/data/publications.json
+
+# Annual review documents (private, not for public repo)
+annual-reviews/
