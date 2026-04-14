@@ -67,4 +67,19 @@
     {{- end }}
   </div>
 </article>
+
+<script>
+function copyBib(event, key) {
+  event.preventDefault();
+  var el = document.getElementById('bib-' + key);
+  if (!el) return;
+  var text = el.textContent.trim();
+  navigator.clipboard.writeText(text).then(function() {
+    var btn = event.target;
+    var orig = btn.textContent;
+    btn.textContent = 'Copied!';
+    setTimeout(function() { btn.textContent = orig; }, 1500);
+  });
+}
+</script>
 {{- end }}

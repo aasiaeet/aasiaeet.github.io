@@ -119,6 +119,14 @@
   text-decoration: none !important;
 }
 
+.pub-links a.bib-copy {
+  cursor: pointer;
+}
+
+.bib-entry {
+  display: none;
+}
+
 /* Topic table of contents */
 .pub-toc {
   margin-bottom: 1.5rem;

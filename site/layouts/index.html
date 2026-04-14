@@ -27,8 +27,8 @@
         <span class="paper-title">{{ .title }}</span>
         <span class="paper-venue">{{ .venue }}{{ if .year }}, {{ .year }}{{ end }}</span>
         <span class="paper-links">
-          {{- if .doi }}<a href="https://doi.org/{{ .doi }}" target="_blank">DOI</a>{{- end }}
-          {{- if .arxiv }}<a href="https://arxiv.org/abs/{{ .arxiv }}" target="_blank">arXiv</a>{{- end }}
+          {{- if .doi }}<a href="https://doi.org/{{ .doi }}" target="_blank">DOI</a>
+          {{- else if .arxiv }}<a href="https://arxiv.org/abs/{{ .arxiv }}" target="_blank">DOI</a>{{- end }}
         </span>
       </div>
       {{- end }}
