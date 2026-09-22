@@ -2,6 +2,13 @@ _featured: null
 abrams_thirty_2018:
 - Computational Biology
 - Cancer Research
+akhundzadeh_learning_2020:
+- Computational Oncology
+- Cancer Progression
+asiaee_bcalm_2026:
+- Causal Inference
+- Heterogeneous Treatment Effect
+- Randomized Controlled Trial
 asiaee_causal_2025:
 - Causal Discovery
 - Structure Learning
@@ -10,9 +17,17 @@ asiaee_causalwrap_2026:
 - Computational Biology
 - Machine Learning
 - Causal Inference
+asiaee_certified_2026:
+- Causal Inference
+- Machine Learning
+- Mechanistic Interpretability
 asiaee_co-evolved_2025:
 - Immunology
 - Infectious Disease
+asiaee_context-dependent_2026:
+- Computational Biology
+- Transcription Factor
+- Statistical Methods
 asiaee_data_2019:
 - Machine Learning
 - Multi-task Learning
@@ -30,6 +45,9 @@ asiaee_fairness_2026:
 asiaee_fix_2026:
 - Algorithmic Fairness
 - Machine Learning
+asiaee_high_2016:
+- Machine Learning
+- High Dimensional Statistics
 asiaee_high_2023:
 - Machine Learning
 - Multi-task Learning
@@ -76,6 +94,8 @@ asiaee_t_if_2012:
 - Sentiment Analysis
 asiaee_taheri_influence_2013:
 - Social Networks
+asiaee_time_2018:
+- Machine Learning
 asiaee_transcriptome_2025:
 - Computational Biology
 - MicroRNA
@@ -83,6 +103,10 @@ asiaee_transcriptome_2025:
 asiaee_widespread_2026:
 - Cancer Research
 - Machine Learning
+asiaee_workload-preserving_2026:
+- Differential Privacy
+- Synthetic Data
+- Causal Inference
 cho_elastic_2019:
 - Statistical Shape Analysis
 golnari_revisiting_2015:
@@ -90,6 +114,10 @@ golnari_revisiting_2015:
 - Complex Networks
 liang_generating_2025:
 - Synthetic Data
+mallal_association_2026:
+- Keystone Theory
+- Immunology
+- Drug Hypersensitivity
 mallal_keystone_2025:
 - Keystone Theory
 - Immunology
@@ -104,11 +132,23 @@ mallal_keystone_2026:
 mallal_keystone_2026-1:
 - Keystone Theory
 - Immunology
+mallal_keystone_2026-2:
+- Keystone Theory
+- Immunology
+- Drug Hypersensitivity
 mukherjee_demographics_2025:
 - SJS/TEN
 - SCAR
 - Drug Hypersensitivity
+mukherjee_host_2026:
+- SCAR
+- Drug Hypersensitivity
 mukherjee_immune_2025:
+- SJS/TEN
+- SCAR
+- Drug Hypersensitivity
+- Immune Checkpoint Inhibitors
+mukherjee_immune_2026:
 - SJS/TEN
 - SCAR
 - Drug Hypersensitivity
@@ -130,10 +170,16 @@ pal_improving_2026:
 - Computational Biology
 - Machine Learning
 - Causal Inference
+ratchataswan_multiple_2026:
+- Drug Hypersensitivity
 strauch_improving_2024:
 - Machine Learning
 - Drug Discovery
 - Statistical Methods
+strauch_tissue-aware_2026:
+- Cancer Research
+- Machine Learning
+- Drug Discovery
 zhu_auprc_2025:
 - Cell Perturbation Experiments
 - In silico Cell Models

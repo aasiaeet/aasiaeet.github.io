@@ -18,6 +18,8 @@
       {{- $pdfPath := printf "/publications/%s.pdf" $pub.key -}}
       {{- if fileExists (printf "static%s" $pdfPath) }}<a href="{{ $pdfPath }}" target="_blank">PDF</a>
       {{- else if $pub.pdf }}<a href="{{ $pub.pdf }}" target="_blank">PDF</a>{{- end }}
+      {{- $supPath := printf "/publications/%s.sup.pdf" $pub.key -}}
+      {{- if fileExists (printf "static%s" $supPath) }}<a href="{{ $supPath }}" target="_blank">Supp</a>{{- end }}
       {{- if $pub.doi }}<a href="https://doi.org/{{ $pub.doi }}" target="_blank" rel="noopener">DOI</a>
       {{- else if $pub.arxiv }}<a href="https://arxiv.org/abs/{{ $pub.arxiv }}" target="_blank" rel="noopener">DOI</a>
       {{- else if $pub.url }}<a href="{{ $pub.url }}" target="_blank" rel="noopener">DOI</a>{{- end }}
